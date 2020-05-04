@@ -73,57 +73,22 @@ body{
 /*ABOUT*/
 /*----------------------------------------------------------*/
 #AMcontent{
-    height: 260px;
+    height: 100px;
     display: grid;
     grid-template-columns: 2fr 4fr;
     padding: 0px;
-}
-#AMcontent img{
-    width: 280px;
-    margin-top: 20px;
-    margin-right: 50px;
-    grid-column: 1/2;
+    text-align: center;
 }
 #AMcontent p{
     padding: 0;
     margin: 0;
-    grid-column: 2/3;
+    grid-column: 1/3;
 }
 /*----------------------------------------------------------*/
 /*STORE LINKS*/
 /*----------------------------------------------------------*/
 #storelinks{
     text-align: center  
-}
-/*----------------------------------------------------------*/
-/*ASTEROIDS*/
-/*----------------------------------------------------------*/
-#asteroids{
-    height: 300px;
-    font-size: 20px;
-    line-height: 10px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(7, 1fr);
-}
-#asteroids h2{
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-#asteroids p{
-    margin-bottom: 0px;
-    line-height: 35px;    
-}
-#quote{
-    font-style: italic;
-    font-size: 20px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-#crystal{
-    height: 20vmin;  
-    grid-column: 2/3;
-    grid-row: 2/4;
 }
 /*----------------------------------------------------------*/
 /*BACK TO MAIN*/
@@ -156,7 +121,7 @@ footer:hover{background-color: #444;}
 }
 hr{width: 900px;}
 #preload img{height: 0;}
-a:link{text-decoration:none; color:white;}
-a:visited{text-decoration:none; color:white;}
-a:hover{text-decoration:none; color:#cccccc;}
-a:active{text-decoration:none; color:white;}
+a:link{text-decoration:none; color:#aaa;}
+a:visited{text-decoration:none; color:#fff;}
+a:hover{text-decoration:none; color:#fff;}
+a:active{text-decoration:none; color:#fff;}
