@@ -131,6 +131,22 @@ footer:hover{background-color: #444;}
     background-size: contain;
     background-repeat: no-repeat;   
 }
+#MailingList{
+    background-image: url(images/b_mail.png);
+    margin: 15px 0px 20px 10px;
+    height: 75px;
+    width: 250px;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.25s;
+}
+#MailingList:hover{background-image: url(images/b_mail_hover.png);}
+#MailingList p{
+    margin: 0px;
+    padding: 25px 0px 0px 60px;
+}
+
 hr{width: 900px;}
 #preload img{height: 0;}
 a:link{text-decoration:none; color:white;}
