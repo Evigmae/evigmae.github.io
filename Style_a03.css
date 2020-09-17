@@ -68,15 +68,15 @@ body{
 #SteamLink{
     width: 900px;
     height: 190px;
-    margin: 10px 0 0 0;
+    margin: 10px 0px 0px 0px;
 }
 /*----------------------------------------------------------*/
 /*VIDEO*/
 /*----------------------------------------------------------*/
 #video{
     width: 900px;
-    height: 500px;
-    margin: 50px 0px 0px 0px;
+    height: 506px;
+    margin: 0px;
 }
 /*----------------------------------------------------------*/
 /*ABOUT*/
@@ -150,7 +150,7 @@ footer:hover{background-color: #444;}
 
 hr{width: 900px;}
 #preload img{height: 0;}
-a:link{text-decoration:none; color:white;}
+a:link{text-decoration:none; color:grey;}
 a:visited{text-decoration:none; color:white;}
 a:hover{text-decoration:none; color:#cccccc;}
 a:active{text-decoration:none; color:white;}
