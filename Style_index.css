@@ -108,14 +108,14 @@ header img{
     background-size: cover;    
 }
 /*CivGame*/
-#CivGame{grid-column: 3/5;}
+#CivGame{grid-column: 2/4;}
 #C03.card{background-image: url(images/IB_C03.png);}
 #C03.card:hover{background-image: url(images/IB_C03_hover.png);}
 /*Echoes of Unrest*/
-#EchoesOfUnrest{grid-column: 1/3;}
+#EchoesOfUnrest{grid-column: 3/5;}
 #B02.card{background-image: url(images/IB_B02.png);}
 #B02.card:hover{background-image: url(images/IB_B02_hover.png);}
-/*Bandits 2.0*/
+/*Bandits: Enter the Fray*/
 #Bandits_EnterTheFray{grid-column: 3/5;}
 #A05.card{background-image: url(images/IB_A05.png);}
 #A05.card:hover{background-image: url(images/IB_A05_hover.png);}
@@ -123,6 +123,10 @@ header img{
 #Asterminer{grid-column: 1/3;}
 #B01.card{background-image: url(images/IB_B01.png);}
 #B01.card:hover{background-image: url(images/IB_B01_hover.png);}
+/*Asterminer: Discoveries*/
+#Asterminer_Discoveries{grid-column: 1/3;}
+#B03.card{background-image: url(images/IB_B03.png);}
+#B03.card:hover{background-image: url(images/IB_B03_hover.png);}
 /*Bandits*/
 #Bandits{grid-column: 2/4;}
 #A03.card{background-image: url(images/IB_A03.png);}

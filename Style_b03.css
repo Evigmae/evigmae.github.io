@@ -64,17 +64,20 @@ body{
 /*----------------------------------------------------------*/
 /*VIDEO*/
 /*----------------------------------------------------------*/
+.twitter-tweet{
+    margin: 0px auto;
+}
 #amv{
     width: 900px;
-    height: 506px;
-    margin: 20px 0px;
+    height: 500px;
+    margin: 25px 0px;
 }
 /*----------------------------------------------------------*/
 /*ABOUT*/
 /*----------------------------------------------------------*/
 #AMcontent{
-    width: 900px;
-    height: auto;
+    width: 700px;
+    height: 300px;
     margin: 10px auto;
     padding: 0px;
     text-align: center;
