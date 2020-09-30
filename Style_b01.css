@@ -67,7 +67,7 @@ body{
 #amv{
     width: 900px;
     height: 506px;
-    margin: 20px 0px;
+    margin: 20px 0px 0px 0px;
 }
 /*----------------------------------------------------------*/
 /*ABOUT*/
@@ -77,7 +77,7 @@ body{
     height: auto;
     margin: 10px auto;
     padding: 0px;
-    text-align: center;
+    text-align: justify;
 }
 #AMcontent p{
     padding: 0;
@@ -86,8 +86,10 @@ body{
 /*----------------------------------------------------------*/
 /*STORE LINKS*/
 /*----------------------------------------------------------*/
-#storelinks{
-    text-align: center  
+#SteamLink{
+    width: 900px;
+    height: 190px;
+    margin: 20px 0px 20px 0px;
 }
 /*----------------------------------------------------------*/
 /*BACK TO MAIN*/
@@ -127,7 +129,7 @@ footer:hover{background-color: #444;}
 
 #DiscordLink{
     background-image: url(images/Discord.png);
-    margin: 25px auto;
+    margin: 40px auto 25px auto;
     height: 76px;
     width: 306px;
     text-align: center;
