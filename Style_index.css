@@ -108,7 +108,7 @@ header img{
     background-size: cover;    
 }
 /*CivGame*/
-#CivGame{grid-column: 2/4;}
+#Arkhaios{grid-column: 2/4;}
 #C03.card{background-image: url(images/IB_C03.png);}
 #C03.card:hover{background-image: url(images/IB_C03_hover.png);}
 /*Echoes of Unrest*/
