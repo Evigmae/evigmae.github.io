@@ -1,0 +1,10 @@
+
+body{
+    background-color: #0d0d0d;
+}
+main{
+    width: 1000px;
+    margin: auto;
+    font-family: monospace, sans-serif;
+    color: #ffffff;
+}
