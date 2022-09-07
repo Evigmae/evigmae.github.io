@@ -107,15 +107,26 @@ header img{
     transition: background-image 0.25s;
     background-size: cover;    
 }
-
-/*Bandits: Enter the Fray*/
-#Bandits_EnterTheFray{grid-column: 3/5;}
+/*Project Tellus*/
+#Project_Tellus{grid-column: 1/3;}
 #A05.card{background-image: url(images/IB_A05.png);}
 #A05.card:hover{background-image: url(images/IB_A05_hover.png);}
+
 /*Asterminer*/
-#Asterminer{grid-column: 1/3;}
+#Asterminer{grid-column: 3/5;}
 #B01.card{background-image: url(images/IB_B01.png);}
 #B01.card:hover{background-image: url(images/IB_B01_hover.png);}
+
+/*Echoes of Unrest*/
+#Echoes_of_Unrest{grid-column: 3/5;}
+#B02.card{background-image: url(images/IB_B02.png);}
+#B02.card:hover{background-image: url(images/IB_B02_hover.png);}
+
+/*Bandits: Enter the Fray*/
+#Bandits_EnterTheFray{grid-column: 1/3;}
+#A04.card{background-image: url(images/IB_A04.png);}
+#A04.card:hover{background-image: url(images/IB_A04_hover.png);}
+
 /*Bandits*/
 #Bandits{grid-column: 2/4;}
 #A03.card{background-image: url(images/IB_A03.png);}
