@@ -93,7 +93,8 @@ body{
     margin-bottom: 5px;
 }
 #GameInfo img{
-    width: auto;
+    width: 900px;
+    margin: 20px 0px;
 }
 /*----------------------------------------------------------*/
 /*BACK TO MAIN*/
