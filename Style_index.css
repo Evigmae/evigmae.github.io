@@ -116,7 +116,7 @@ header img{
 #A04.card:hover{background-image: url(images/IB_A04_hover.png);}
 
 /*Asterminer*/
-#Asterminer{grid-column: 3/5;}
+#Asterminer{grid-column: 2/4;}
 #B01.card{background-image: url(images/IB_B01.png);}
 #B01.card:hover{background-image: url(images/IB_B01_hover.png);}
 
@@ -137,7 +137,7 @@ header img{
 #about{
     margin: 0px auto 0px auto;
     padding: 15px;
-    width: 600px;
+    width: 800px;
     text-align: center;
 }
 #about h1{
