@@ -19,358 +19,336 @@
 <body> 
 <main>
 
-    <h2>FRANCISCO SCIARAFFIA: PORTFOLIO</h2>
+    <h2>PORTFOLIO of FRANCISCO SCIARAFFIA</h2>
     <p>October 2023</p>
-    <p>Senior, Technical Artist / Gameplay Programmer / Game Designer</p>    
+    <p>Technical Artist / Gameplay Programmer / Game Designer</p>    
     
 <div id="Group">
-    <h2>MESH WALL TOOL (USED IN HOGWARTS LEGACY)</h2>
-    <p>A seemengli normal spline mesh tool, with the unique feature of only using Spline Mesh Components where they are actually necesary, everywhere else it will try to use Instanced Static Mesh Components,
-        unless there is only 1 instance, in which case it will use a regular Static Mesh for that section.</p>
-    <p>It has other features, should as letting you pick a specific Star and/or End mesh, to add pillars in between each section. Or pillars as start/end meshes.</p>
+    <h2>SIMPLIFIED COLLISION TOOL</h2>
+    <p>A spline-based simplified collision tool. I initially designed a simpler version for my game "Bandits." Later, I suggested a similar tool to the "Hogwarts Legacy" team and developed this advanced version for them.</p>
+    <p>The tool uses a single InstancedStaticMeshComponent with a 8-verts box mesh, scaled for each segment.</p>
     <div id="Section">
         <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/xQ0bNlmC1fA?si=_5JW63VRZFaqOeCN&amp;start=6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>A video of the mesh wall actor being set up and used to build a wall with.</p>
+            <p>It's efficient to process. While it's designed not to be overly lengthy, it can be, without causing noticeable hitches in the editor.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/uDNzwDHcqkI?si=pvrwrLBc4pUOt8aO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div id="Element">
-            <img src="images/portfolio/MeshWallTool/C.jpg" title="Right click and open in new tab to see larger.">
-            <p>(Open in new tab to see properly) In the details panel you can specify a list of meshes to pick from, randomly, but can also assign weights to alter their probability.</p>
+            <p>This tool is built in C++, allowing me to directly expose the InstancedStaticMeshComponent Collision properties to the Actor details panel.</p>
+            <img src="images/portfolio/SimplifiedCollision/CollisionPanel.png" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/MeshWallTool/A.jpg" title="Right click and open in new tab to see larger.">
-            <p>A Stone Wall that needs to curve.</p>
+            <p>The wall adjusts to the spline curve, generating new instances/sections only when the delta rotation surpasses the set maximum delta, which is a configurable parameter.</p>
+            <img src="images/portfolio/SimplifiedCollision/A.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/MeshWallTool/B.jpg" title="Right click and open in new tab to see larger.">
-            <p>Only the sections that actually have enough curvature will use Spline Mesh, all the other are Instanced Static mesh.</p>
+            <p>Here, you can distinctly see each section created in this instance.</p>
+            <img src="images/portfolio/SimplifiedCollision/B.jpg" title="Right click and open in new tab to see larger.">            
+        </div>
+        <div id="Element">
+            <p>The wall is also adaptable to handle pitch rotation.</p>
+            <img src="images/portfolio/SimplifiedCollision/C.jpg" title="Right click and open in new tab to see larger.">            
+        </div>
+        <div id="Element">
+            <p>A key feature of the wall is how the instances/segments align perfectly on the outside corner, ensuring no gaps or spaces where one could get snagged. All thanks to the math behind it.</p>
+            <img src="images/portfolio/SimplifiedCollision/D.jpg" title="Right click and open in new tab to see larger.">            
+        </div>        
+    </div>
+</div>
+
+<div id="Group">
+    <h2>MESH WALL TOOL (USED IN HOGWARTS LEGACY)</h2>
+    <p>This tool may seem like a typical spline mesh tool, but it uniquely uses Spline Mesh Components only where necessary. Otherwise, it opts for Instanced Static Mesh Components, or a single regular Static Mesh for single instances.</p>
+    <p>The tool offers additional features, such as selecting specific Start and/or End meshes, to place pillars between each section, or using pillars as start/end meshes.</p>
+    <div id="Section">
+        <div id="Element">
+            <p>A video demonstration of the mesh wall actor setup, showcasing its use in building a wall.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/xQ0bNlmC1fA?si=_5JW63VRZFaqOeCN&amp;start=6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+        </div>
+        <div id="Element">
+            <p>In the details panel, users can define a list of meshes to select from randomly. Additionally, weights can be assigned to modify their selection probability.</p>
+            <img src="images/portfolio/MeshWallTool/C.jpg" title="Right click and open in new tab to see larger.">            
+        </div>
+        <div id="Element">
+            <p>Here's an example of a stone wall that requires curvature.</p>
+            <img src="images/portfolio/MeshWallTool/A.jpg" title="Right click and open in new tab to see larger.">            
+        </div>
+        <div id="Element">
+            <p>In this debug mode, you can see represented by red lines that only sections with significant curvature utilize the Spline Mesh; the rest are made up of Instanced Static Meshes.</p>
+            <img src="images/portfolio/MeshWallTool/B.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         
         <div id="Element">
-            <img src="images/portfolio/MeshWallTool/D.jpg" title="Right click and open in new tab to see larger.">
-            <p>This Fence wall does not need to display any curved sections because of its design.</p>
+            <p>The fence wall design does't need any curved sections.</p>
+            <img src="images/portfolio/MeshWallTool/D.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/MeshWallTool/E.jpg" title="Right click and open in new tab to see larger.">
-            <p>So nothing uses Spline Meshes in this case.</p>
+            <p>As a result, no Spline Meshes are used in this instance.</p>
+            <img src="images/portfolio/MeshWallTool/E.jpg" title="Right click and open in new tab to see larger.">            
         </div>
     </div>
  </div>
 
 <div id="Group">
-    <h2>SIMPLIFIED COLLISION TOOL (USED IN HOGWARTS LEGACY)</h2>
-    <p>A Spline-Based simplified collision tool. I originally created a simpler version of it for my game Bandits, but suggested to the Hogwarts Legacy guys they needed it something like it.
-        So I created this advanced version for that game.</p>
-    <p>The tool is a single InstancedStaticMeshComponent with a clean box mesh, scaled to fit each segment.</p>
+    <h2>HOGWARTS LEGACY - PROXY TOOL </h2>
+    <p>In "Hogwarts Legacy", levels were constructed using multiple sublevels as layers. This approach rendered HLODs unsuitable. To address this, I developed a system that would utilize a custom SetupMap to load all the sublevels associated with a building or structure. The system would then capture a comprehensive snapshot to produce a Proxy, inclusive of all relevant elements. This mechanism was also equipped to accommodate the snowy winter variation. Eventually, a ProxyContainerActor would be automatically generated in the LOD level. We also created a weekly TeamCity job to ensure that any modifications artists made to any level would soon be mirrored in the LOD Proxies.</p>
     <div id="Section">
         <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/uDNzwDHcqkI?si=pvrwrLBc4pUOt8aO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>The tool is quite cheap to process, and even though it shouldn't really need to be too long, it can and it barely hitches the editor.</p>
+            <p>For each building requiring a proxy, a configuration was established within the setup maps. Here, a volume was placed and adjusted via a convenient Utility Widget.</p>
+            <img src="images/portfolio/Phx/HarvestGeometryActor/01.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/SimplifiedCollision/CollisionPanel.png" title="Right click and open in new tab to see larger.">
-            <p>(Open in new tab to see properly) The tool is C++ based, so I could expose the InstancedStaticMeshComponent Collision properties directly to the Actor details panel.</p>
+            <p>The process output 3 meshes, one for things that had a last-lod impostor; like windows, vines, and finer details. And 2 other proxies; a default one and a winter variant. Ultimately, these proxies were combined within the ProxyContainerActor positioned in the LOD map.</p>
+            <img src="images/portfolio/Phx/HarvestGeometryActor/02.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/SimplifiedCollision/A.jpg" title="Right click and open in new tab to see larger.">
-            <p>The wall acounts for the spline courve to only generate new instances/sections where the delta rotation has exceded the max allowed delta (configurable parameter).</p>
+            <p>This showcases the proxy containing only flat components, which significantly reduces the total polygon count.</p>
+            <img src="images/portfolio/Phx/HarvestGeometryActor/03.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/SimplifiedCollision/B.jpg" title="Right click and open in new tab to see larger.">
-            <p>Here you can see clearly each section that was created in this case.</p>
+            <p>This version of the proxy omits any mesh that had impostors. This exclusion drastically cuts down on triangle counts, aiding silhouette rendering. In the final rendition, both versions merge within the ProxyContainerActor, presenting a complete proxy with all its components.</p>
+            <img src="images/portfolio/Phx/HarvestGeometryActor/04.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/SimplifiedCollision/C.jpg" title="Right click and open in new tab to see larger.">
-            <p>The wall can also be configured to handle pitch rotation, in case you needed to add colission on a cavern or stairs.</p>
+            <p>The system was also adapted for World Composition Landscape LODs. Leveraging the same ProxyTool, but Unbound; it could generate a proxy for all actors and meshes on a given tile. Specific steps were executed for larger rock formations, hills, long spline tools, roads, etc. Collectively, this encompassed everything beyond the immediate vicinity of the player, including the very large and complex Hogsmeade Town and Hogwarts Castle.</p>
+        </div>
+    </div>    
+</div>
+
+<div id="Group">
+    <h2>HOGWARTS LEGACY - FAR FOLIAGE</h2>
+    <p>A UE4 World Composition optimization that manages the distant foliage without creating foliage mesh proxies, the FarFoliage system exists as a distinct layer on top of the World Composition Tile environment. This arrangement allows it to manage all foliage-related elements, as World Composition Tile LODs do not include any foliage. The system also helps mask level streaming pops, as it operates independently. As players move, the system updates which distant foliage instances are displayed.</p>
+    <div id="Section">
+        <div id="Element">
+            <p>The first step was to identify all the relevant overworld foliage and store that information in a pre-computed list. We established a TeamCity job to carry out this step daily. This ensured that any modifications made by artists would be reflected in the distant foliage shortly after.<br><br>
+                The image below is a snapshot of the entire overworld. The boxes indicate the bounds of the captured foliage per tile.</p>
+            <img src="images/portfolio/Phx/FarFoliage/01.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/SimplifiedCollision/D.jpg" title="Right click and open in new tab to see larger.">
-            <p>One super neat feature of the wall is how the instances/segments always allign perfeclty on the outside corner, so there is no gap or space to get snaged by. Prised be the math.</p>
+            <p>At runtime, there's a defined radius around the player, represented here by a large sphere. Beyond this sphere, normal foliage isn't rendered since the foliage's max-draw distance is set to align with the distant foliage system's radius.</p>
+            <img src="images/portfolio/Phx/FarFoliage/02.jpg" title="Right click and open in new tab to see larger.">            
         </div>
-        
+        <div id="Element">
+            <p>In this image, I've highlighted the regular foliage. Outside the radius, all foliage is represented by impostors. Importantly, these impostors are used per tree type or family, rather than for each individual or unique tree mesh.</p>
+            <img src="images/portfolio/Phx/FarFoliage/03.jpg" title="Right click and open in new tab to see larger.">            
+        </div>
+        <div id="Element">
+            <p>As players move, the runtime system determines which distant foliage should be displayed. Meanwhile, the standard foliage utilizes Unreal's native optimization, fading out foliage beyond a set max-draw distance. Additionally, the system includes other enhancements, such as evaluating only after significant player movement, ensuring tiles are within the viewing frustum, and verifying they are not too far to be relevant at the time.</p>
+            <p>I might try to capture a video of this in action in-game...</p>
+        </div>
+    </div>
+</div>
+
+<div id="Group">
+    <h2>MISC.</h2>
+    <p>Things I've tackled that aren't linked to a specific project.</p>
+    <div id="Section">
+        <div id="Element">
+            <p>Since 2016, I've been developing and maintaining a plugin filled with handy C++ functions for Blueprints. These functions speed up my development process.</p>
+            <img src="images/portfolio/Library.jpg" title="Right click and open in new tab to see larger.">            
+        </div>        
+        <div id="Element">
+            <p>I experimented with creating islands using hexagonal tiles. They originate from a central, volcano-like elevation and expand outward. This expansion continues until the formation loses its "energy", resulting in natural-looking shapes.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/Qe2kkH7fe-E?si=m8AHfhVx7iNxhMwG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+        </div>
+        <div id="Element">
+            <p>One of the first fully custom tasks I completed as a Technical Artist was this bridge. You set its length, and it would automatically calculate the number of required supports and their respective heights.</p>
+            <img src="images/portfolio/bridgeGif.gif" title="Right click and open in new tab to see larger.">            
+        </div>
     </div>
 </div>
 
 <div id="Group">
     <h2>NETWORKED INVENTORY - ONLINE RPG PROTOTYPE</h2>
-    <p>The essentials for an Online RPG; can equip things, can put things in containers, can put things on your inventory, and so on. Everything is properly replicated through Unreal's networking system. 
-        <br>Server always has authority over all transactions.</p>
+    <p>This project encompasses the core features needed for an Online RPG. Players can equip items, store them in containers, or add them to their inventories. All actions are seamlessly integrated with Unreal's networking system, and the server retains authority over every transaction.</p>
     <div id="Section">
         <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/Ye9FwETuEDM?si=9_a82wbn-ElRtoPW" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>The video shows a listen-server and a client interacting with the networked inventory/ui system, and behavior is consistent on both ends.</p>
+            <p>The video demonstrates both a listen-server and a client interacting with the networked inventory/UI system, displaying consistent behavior on both sides.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/Ye9FwETuEDM?si=9_a82wbn-ElRtoPW" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
         </div>
         <div id="Element">
-            <img src="images/portfolio/NetworkedInventory/DataAsset.png" title="Right click and open in new tab to see larger.">
-            <p>Everything is built around the uses of DataAssets to specify everything relevant to the items you interact with and move around through the inventories and their UIs.</p>
-        </div>
-    </div>
-</div>
-
-<div id="Group">
-    <h2>HOGWARTS LEGACY - PROXY TOOL </h2>
-    <p>In this game the level were built in many sublevels used as layers, which made HLODs not a viable option. So I created a system that would use a SetupMap to load all the levels used on a buildings
-        and capture a snapshot of it to generate a Proxy from, that included everything. This also suported the Winter variation that was covered in snow. At the end ProxyContainerActor was played on the LOD
-        level automatically. We created a TeamCity job for this, that would run constantly, so any work artist did on any level would be shortly reflected on the LOD Proxies.
-    </p>
-    <div id="Section">
-        <div id="Element">
-            <img src="images/portfolio/Phx/HarvestGeometryActor/01.jpg" title="Right click and open in new tab to see larger.">
-            <p>Each building we wanted a proxy of, needed to have a setup on one of the setup maps. There you would place a volume and configure it through a handy Utility Widget.</p>
-        </div>
-        <div id="Element">
-            <img src="images/portfolio/Phx/HarvestGeometryActor/02.jpg" title="Right click and open in new tab to see larger.">
-            <p>The result was a proxy of all the sections that had impostors such as windows, vines, and small detail. A regular Proxy, and a Winter version. In the end these would all be assembled back in the
-                 ProxyContainerActor that gets placed in the LOD map.
-            </p>
-        </div>
-        <div id="Element">
-            <img src="images/portfolio/Phx/HarvestGeometryActor/03.jpg" title="Right click and open in new tab to see larger.">
-            <p>Here is the proxy with only the flat stuff, which has an extremely low poly count.</p>
-        </div>
-        <div id="Element">
-            <img src="images/portfolio/Phx/HarvestGeometryActor/04.jpg" title="Right click and open in new tab to see larger.">
-            <p>This is the proxy, that does not bake any of the meshes that had impostors in them. This saved an tremendous amount of triangles, and would actually help with the silouete. At the end both
-                meshes are assembled in the ProxyContainerActor and looks like a normal proxy with all its elements. 
-            </p>
-        </div>
-    </div>
-    <p>The system also extended to the Landscape LODs, which used the same ProxyTool, but unbound, to generate a proxy of all the actors and meshes on the tile. There it performed specific steps for big rocks,
-         hills, long spline tools, roads, and so on.<br>
-         Everything combined was quite literally everything outside of the player nearby readius, including the entire Hogsmeade Town and the Hogwarts Castle, which was quite a lot of work to get right!</p>
-</div>
-
-<div id="Group">
-    <h2>HOGWARTS LEGACY - FAR FOLIAGE</h2>
-    <p>A UE4 World Composition optimization that handles the far away foliage without ugly Tile LOD proxies. Also good to hide level streaming pops, as this system functions independently of it.
-        As you move around the system updated which far foliage instances are rendered.
-    </p>
-    <div id="Section">
-        <div id="Element">
-            <img src="images/portfolio/Phx/FarFoliage/01.jpg" title="Right click and open in new tab to see larger.">
-            <p>1st step was to capture all the big-enough overworld foliage and store them in a pre-computed list. We created a TeamCity job that would do this step daily, so any work artists did would be 
-                reflected on the farfoliage not long after.
-            </p>
-        </div>
-        <div id="Element">
-            <img src="images/portfolio/Phx/FarFoliage/02.jpg" title="Right click and open in new tab to see larger.">
-            <p>At runtime there is a radius around the player, here represented by a big sphere, and outside of it normal Foliage is no longer rendered, as the foliage max-draw distance was set
-                 to match the radius of the far foliage system.
-            </p>
-        </div>
-        <div id="Element">
-            <img src="images/portfolio/Phx/FarFoliage/03.jpg" title="Right click and open in new tab to see larger.">
-            <p>Here I've selected the normal foliage, and everything beyond the sphere is Far Foliage, which is a collection of Impostors.</p>
-        </div>
-        <div id="Element">
-            <p>As you move around, the run-time system evaluates which far foliage to render, while the regular foliage just uses the native foliage optimization of Unreal and fades out foliage
-                 after a specified max-draw distance. <br>
-                Aditionally the system has other optimizations, such as only evaluating after you've moved enough, that the tiles are inside the view frustrum, and that they are close enough to be updated.</p>
-            <p>Should try to get a video of this working in-game...</p>
+            <p>All components are structured around the use of DataAssets. These assets provide detailed information about the items players interact with, facilitating seamless integration with the inventories and their respective UIs.</p>
+            <img src="images/portfolio/NetworkedInventory/DataAsset.png" title="Right click and open in new tab to see larger.">            
         </div>
     </div>
 </div>
 
 <div id="Group">
     <h2>RPG SIMPLE DIALOGUE SYSTEM AND SETUP</h2>
-    <p>The dialogue system has all you need without reinventing the wheel. It just uses Blueprints, and 4 custom C++ Nodes to handle everything. It supports regular lines, questions, branching dialogue, a fallback concluded state, interaction with the world, etc.</p>
+    <p>The dialogue system offers essential features without overcomplication. Utilizing Blueprints and 6 custom C++ nodes, it supports standard dialogues, branching conversations, questions, a default concluded state, and interactive world elements.</p>
     <div id="Section">
         <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/wi4PTSWEmrY?si=RgFG-XY0srXr4Aad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>The dialogue system implemented in game. At the end the player asks the NPC to unlock a door for them.</p>
+            <p>Within the game, the dialogue system can be seen in action. Towards the end, the player requests an NPC to unlock a door.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/wi4PTSWEmrY?si=RgFG-XY0srXr4Aad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
         </div>
         <div id="Element">
-            <img src="images/portfolio/DialogueSystem/Nodes.jpg" title="Right click and open in new tab to see larger.">
-            <p>The first pair of nodes are Latent Blueprint nodes, they start and won't Complete until they get their callback. The second pair are so you can print the lines however way you want. 
-                And the last two are the callbacks to let the Latent Nodes know they can now Complete.</p>
+            <p>The system integrates six nodes. The first two are Latent Blueprint nodes which only complete once they receive their callback. The next two facilitate custom line displays, and the final pair are callbacks indicating the Latent Nodes can proceed.</p>
+            <img src="images/portfolio/DialogueSystem/Nodes.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/DialogueSystem/ContentBrowser.PNG" title="Right click and open in new tab to see larger.">
-            <p>Inheriting from a Parent class that handles all the nuance, child blueprints only need to worry about their scripted dialogue.</p>
+            <p>By inheriting from a parent class managing the details (BP_DialogueSystem), child blueprints can focus solely on their specific dialogue scripting.</p>
+            <img src="images/portfolio/DialogueSystem/ContentBrowser.PNG" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/DialogueSystem//Actor.PNG" title="Right click and open in new tab to see larger.">
-            <p>The actor/script is attatched to the NPC or object that will be hosting it.</p>
+            <p>Each script functions as an actor attached to an NPC in the world, enabling easy interaction with other world elements.</p>
+            <img src="images/portfolio/DialogueSystem//Actor.PNG" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/DialogueSystem/DialogueSystem.PNG" title="Right click and open in new tab to see larger.">
-            <p>En example of how the blueprint dialogue script looks like. Except for the custom Request line/question nodes, it is just Blueprint.</p>
+            <p>Here's an example of how the blueprint dialogue script is built. Except for the custom Request line/question nodes, everything is vanilla Blueprints. the 'DoDialogue Event' is when dialogue is first initiated through the NPC host, and the 'DoFallback Event' is used instead when the primary dialogue has already been "used". Doing this is optional.</p>
+            <img src="images/portfolio/DialogueSystem/DialogueSystem.PNG" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/DialogueSystem/DialogueSystem2.PNG" title="Right click and open in new tab to see larger.">
-            <p>Another example. This one implements an altern bool specific to this script.</p>
+            <p>This other example showcases a script built around a question, with the initial line being alternated when the player replies with the D option. Since this is all Blueprints, any type of script customization can be easily achieved.</p>
+            <img src="images/portfolio/DialogueSystem/DialogueSystem2.PNG" title="Right click and open in new tab to see larger.">            
         </div>
     </div>
-</div>
+</div>  
 
 <div id="Group">
     <h2>MATERIALS FOR HALLUCINATION SEQUENCE</h2>
-    <p>Done for Dune Awakening (Yager co-development with Funcom). The Spice Vision is a sequence where the player is having vivid hallucinations and sees people and other things made out of sand, water, or shadows.</p>
+    <p>Created for Funcom's Dune Awakening (Yager co-development), the Spice Vision sequence immerses the player in intense hallucinations, portraying entities as sand, water, or shadows.</p>
     <div id="Section">
         <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/DZDiMofDBMA?si=rI8rxelNXwuzzNpc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>The Materials as a character runs in slow-mo.</p>
+            <p>The Materials as a character runs in slow-motion.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/DZDiMofDBMA?si=rI8rxelNXwuzzNpc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Materials/Sand.jpg" title="Right click and open in new tab to see larger.">
             <p>Sand Material</p>
+            <img src="images/portfolio/Materials/Sand.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Materials/Water.jpg" title="Right click and open in new tab to see larger.">
             <p>Water Material</p>
+            <img src="images/portfolio/Materials/Water.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Materials/Shadows.jpg" title="Right click and open in new tab to see larger.">
             <p>Shadow Material</p>
+            <img src="images/portfolio/Materials/Shadows.jpg" title="Right click and open in new tab to see larger.">            
         </div>
     </div>
-</div>    
+</div> 
 
 <div id="Group">
     <h2>GRID MATERIAL</h2>
-    <p>Very useful for prototypes or low poly games. Its a material that lets you use a Material Instance to pick the color of each one of its 16 sections.</p>
+    <p>Ideal for prototypes or low-poly games. This material lets you change the color of its 16 sections using a Material Instance.</p>
     <div id="Section">
         <div id="Element">
-            <img src="images/portfolio/ColorGrid/A.jpg" title="Right click and open in new tab to see larger.">
-            <p>The Matereial splits the UV into 16 sections and asignes a color to each one. It would be extended to also include other things if the project needed it.</p>
+            <p>This material divides the UV into 16 parts, giving each a color. It could be expanded to include more features if needed.</p>
+            <img src="images/portfolio/ColorGrid/A.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/ColorGrid/B.jpg" title="Right click and open in new tab to see larger.">
-            <p>On Blender I've set up the UV to match the colors sections into the UV grid.</p>
+            <p>In Blender, I've aligned the UVs to match the color sections on the UV grid. For convenience one might want to have a mockup texture with the final colors to use in the UV-ing process.</p>
+            <img src="images/portfolio/ColorGrid/B.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/ColorGrid/C.jpg" title="Right click and open in new tab to see larger.">
-            <p>This way all the prototype assets use a single material with a single draw call that lets you have up to 16 colors per asset.</p>
+            <p>All prototype assets use this single material, allowing for one draw call and up to 16 colors per asset.</p>
+            <img src="images/portfolio/ColorGrid/C.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/ColorGrid/D.jpg" title="Right click and open in new tab to see larger.">
-            <p>Then on the Material Instance for these assets you select the colors each grid section should have. Super simple.</p>
+            <p>Using a Material Instance, you can easily pick the color for each section.</p>
+            <img src="images/portfolio/ColorGrid/D.jpg" title="Right click and open in new tab to see larger.">            
         </div>        
-    </div>
-</div>
-
-<div id="Group">
-    <h2>MISC.</h2>
-    <p>Things I've done that are not part of any specific project.</p>
-    <div id="Section">
-        <div id="Element">
-            <img src="images/portfolio/Library.jpg" title="Right click and open in new tab to see larger.">
-            <p>Since 2016 I've been growing and mainting a plugin with a large number of very useful C++ functions exposed to Blueprints, that speed up my dev process.</p>
-        </div>        
-        <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/Qe2kkH7fe-E?si=m8AHfhVx7iNxhMwG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Prototyping the generation of hexagonal islands that start from a volcano-like central  high point and spread out until they "run out of energy", creating organic shapes.</p>
-        </div>
-        <div id="Element">
-            <img src="images/portfolio/bridgeGif.gif" title="Right click and open in new tab to see larger.">
-            <p>The first true "Tech Art" thing I did was this bridge that you could extend and it would automatically figure out how many legs it needed and how tall they needed to be.</p>
-        </div>
     </div>
 </div>
 
 <div id="Group">
     <h2>ASTERMINER (UE5, WIP)</h2>
-    <p>Asterminer is a game where you control a truck-ship to explore around, collect crystals, and load them into a train.<br> It is based on an 
-        <a href="https://www.youtube.com/watch?v=F08vHFyFJuI&list=PLvBAhItpoTLPmQBk8RtxaCn8x480wOEyu&index=4&ab_channel=BenerotEmpire">earlier game I made for Android/iOS</a>, which had over 50k+ premium downloads.</p>
+    <p>In Asterminer, you control a truck-ship, gather crystals, and load them onto a train. The concept originates from an <a href="https://www.youtube.com/watch?v=F08vHFyFJuI&list=PLvBAhItpoTLPmQBk8RtxaCn8x480wOEyu&index=4&ab_channel=BenerotEmpire">earlier game I designed for Android/iOS</a>, achieving over 50k+ premium downloads.</p>
     <div id="Section">
         <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/kDU3zQHkjYk?si=ZzrG_f76EaL-Q5Xy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>This is a prototype of a 6 wheeled rover with independent suspension on each wheel. The vehicle is super smooth and satisfying to drive. It is all interpolation with no physics. 
-                Video shows under the hood to show it is tracing the ground and calculating the position of the chasis and the wheels based on the shape of the terrain.</p>
+            <p>The prototype showcases a 6-wheeled rover, each wheel having its own suspension. It's enjoyable to drive and uses interpolation instead of physics. The video displays the under-the-hood mechanics, emphasizing how it traces and adjusts to the terrain's shape.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/kDU3zQHkjYk?si=ZzrG_f76EaL-Q5Xy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
         </div>       
         <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/EsvtjSf6QsI?si=UlEa9Ac6dX3i_N3H" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Did the materials for the crystals you collect, as weel and making the actor pick a random mesh, rotation, and scale when placed.</p>
+            <p>Created material for the collectible crystals. Each actor chooses a random shape, rotation, and size when placed.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/EsvtjSf6QsI?si=UlEa9Ac6dX3i_N3H" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
         </div> 
         <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/XoTZn3MYCz0?si=2CxCKWu6tyn7gXj7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>You can control the train, and movig along the level train tracks. It features a junction system, where you can switch which side to take, and smoothly move the train between splines.</p>
+            <p>Control the train as it moves on tracks. It includes a junction system letting you choose paths and transition smoothly between splines.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/XoTZn3MYCz0?si=2CxCKWu6tyn7gXj7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
         </div>
         <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/tnq61CDDXLM?si=2ZYduvihLgOBJ6ED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>This video is just a quick demo of how the junction is built inside the editor.</p>
+            <p>A brief demo explaining the junction's construction within the editor.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/tnq61CDDXLM?si=2ZYduvihLgOBJ6ED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
         </div>        
     </div>
 </div>
 
 <div id="Group">
     <h2>BANDITS (UE4, 2018, Steam) - Epic Mega Grant Recipient</h2>
-    <p>Bandits was my first PC game released on Steam. It has a PvP mode, and a PvE story mode. It is very lowpoly in style, favoring gameplay and performance. 
-        <a href="https://benerot.com/bandits.html">(Link to Game's Website)</a>
-    </p>
-    <p>It has 8 unique playable characters. I modeled all the actors, but none of the environment. The game was done using both Blueprints and C++.</p>
+    <p>Bandits was my first PC game released on Steam. It features a PvP mode and a PvE story mode. The game sports a lowpoly style, prioritizing gameplay and performance. 
+        <a href="https://benerot.com/bandits.html">Link to Game's Website</a>. 
+        There are 8 unique playable characters in the game. I was responsible for modeling all the actors but not the environment. The development utilized both Blueprints and C++.</p>
     <div id="Section">
         <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/zfxtmjo6O7s?si=DV7prSqR15RghWQC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>Here is a video of the full game in action.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/zfxtmjo6O7s?si=DV7prSqR15RghWQC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
         </div>
         <div id="Element">
-            <iframe id="video" src="https://www.youtube.com/embed/JcNKFXhsi70?si=1hKXzg9_wXlReHeL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Destruction system in action. There is a single configurable Destructible Actor in the game. And with it you create modules to build bigger buildings with.</p>
+            <p>Watch the destruction system in action. The game incorporates a single configurable Destructible Actor, which is used to create modules for constructing larger buildings.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/JcNKFXhsi70?si=1hKXzg9_wXlReHeL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/DestructionConfig.jpg" title="Right click and open in new tab to see larger.">
-            <p>(Open in new tab to see better) Configuration of destructible actor in its details panel. You can set which assets are used at its different destruction states. Supports randomization.</p>
+            <p>This showcases the configuration of the destructible actor within its details panel. You can determine the assets used for its varying destruction states, and it supports randomization.</p>
+            <img src="images/portfolio/Bandits/DestructionConfig.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Flag.gif" title="Right click and open in new tab to see larger.">
             <p>A vertex animated flag.</p>
+            <img src="images/portfolio/Bandits/Flag.gif" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/CWall.gif" title="Right click and open in new tab to see larger.">
             <p>A simplified collision tool. Used to define the outline of the playable area.</p>
+            <img src="images/portfolio/Bandits/CWall.gif" title="Right click and open in new tab to see larger.">            
         </div>        
         <div id="Element">
-            <img src="images/portfolio/Bandits/Front.jpg" title="Right click and open in new tab to see larger.">
-            <p>Modelled the tanks in blender and used a grid-UV technique to paint them by section, used masked to highlight gameplay elements, such as weapon color, thruster intensity, and so on.</p>
+            <p>I modeled the tanks in Blender and employed a grid-UV technique for sectional painting. Masks were used to accentuate gameplay elements like weapon color, thruster intensity, and more.</p>
+            <img src="images/portfolio/Bandits/Front.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Back.jpg" title="Right click and open in new tab to see larger.">
-            <p>The tanks are built in many pieces, and assembled inside Unreal, where all their specific secondary elements are also added. Only the two legged tanks legs were animated in Blender.</p>
+            <p>The tanks consist of multiple components assembled within Unreal. All their specific secondary elements were added there as well. Only the legged tanks had their legs animated in Blender.</p>
+            <img src="images/portfolio/Bandits/Back.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Top.jpg" title="Right click and open in new tab to see larger.">
-            <p>The unique siluethe of the tanks was always an important consideration in their design.</p>
+            <p>Maintaining a unique silhouette for the tanks was a key design consideration.</p>
+            <img src="images/portfolio/Bandits/Top.jpg" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Enemy units.png" title="Right click and open in new tab to see larger.">
-            <p>Also created several enemy skeletal meshs and modular turrets, as well as mines and missiles.</p>
+            <p>I also created various enemy skeletal meshes, modular turrets, mines, and missiles.</p>
+            <img src="images/portfolio/Bandits/Enemy units.png" title="Right click and open in new tab to see larger.">            
         </div>        
         <div id="Element">
-            <img src="images/portfolio/Bandits/LandscapeMaterial.gif" title="Right click and open in new tab to see larger.">
-            <p>The game's landscape material was also tool-ified so it was super easy to paint a clear low-poly looking environment.</p>
+            <p>The game's landscape material was enhanced to facilitate easy painting of a distinct low-poly environment.</p>
+            <img src="images/portfolio/Bandits/LandscapeMaterial.gif" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Alex.gif" title="Right click and open in new tab to see larger.">
-            <p>Hovering Tank. Fires a big bomb, and places a beam generator.</p>
+            <p>Hovering Tank. Fires a big bomb, and deploys a beam generator.</p>
+            <img src="images/portfolio/Bandits/Alex.gif" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Bonie.gif" title="Right click and open in new tab to see larger.">
-            <p>A legged melee mech, punches with one arm, shoots through the other, can generate 3 shields around itself and lunch them.</p>
+            <p>AThis is a legged melee mech. It punches with one arm, fires from the other, can generate three shields around itself, and launch them as projectiles.</p>
+            <img src="images/portfolio/Bandits/Bonie.gif" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Dorian.gif" title="Right click and open in new tab to see larger.">
-            <p>A hover tank with side blasters, can place a smart turret with predictive aim.</p>
+            <p>Displayed is a hover tank with side blasters. It can deploy a smart turret with predictive aiming capability.</p>
+            <img src="images/portfolio/Bandits/Dorian.gif" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Edward.gif" title="Right click and open in new tab to see larger.">
             <p>A wheeled tank that fires missiles, and can place a wave of dark energy.</p>
+            <img src="images/portfolio/Bandits/Edward.gif" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Gregory.gif" title="Right click and open in new tab to see larger.">
-            <p>A heavily armored tank, generates an electric arc at melee range, and places defensive walls.</p>
+            <p>Here's a heavily armored tank that generates an electric arc in melee range and can set up defensive walls</p>
+            <img src="images/portfolio/Bandits/Gregory.gif" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Katrina.gif" title="Right click and open in new tab to see larger.">
-            <p>An agile legged spider-tank, casts a magic 3-stage attack, and launches a web granade to slow enemies.</p>
+            <p>An agile, legged spider-tank that executes a tri-stage magic attack and can deploy a web grenade to hinder enemies.</p>
+            <img src="images/portfolio/Bandits/Katrina.gif" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Natalia.gif" title="Right click and open in new tab to see larger.">
-            <p>A classic normal tank! has a front machine gun and places proximity mines.</p>
+            <p>A classic tank equipped with a front machine gun and capable of deploying proximity mines</p>
+            <img src="images/portfolio/Bandits/Natalia.gif" title="Right click and open in new tab to see larger.">            
         </div>
         <div id="Element">
-            <img src="images/portfolio/Bandits/Wayne.gif" title="Right click and open in new tab to see larger.">
-            <p>And agile sharp shooter, can trap enemies in a gravity well, and bring them down with its side gun.</p>
+            <p>An agile sharpshooter that can ensnare enemies in a gravity well and target them with its side gun.</p>
+            <img src="images/portfolio/Bandits/Wayne.gif" title="Right click and open in new tab to see larger.">            
         </div>
     </div>
 </div>    
