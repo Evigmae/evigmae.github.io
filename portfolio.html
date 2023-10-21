@@ -23,15 +23,15 @@
     <p>October 2023</p>
     <p>Senior, Technical Artist / Gameplay Programmer / Game Designer</p>    
     
-    <hr>
+<div id="Group">
     <h2>MESH WALL TOOL (USED IN HOGWARTS LEGACY)</h2>
     <p>A seemengli normal spline mesh tool, with the unique feature of only using Spline Mesh Components where they are actually necesary, everywhere else it will try to use Instanced Static Mesh Components,
-         unless there is only 1 instance, in which case it will use a regular Static Mesh for that section.</p>
+        unless there is only 1 instance, in which case it will use a regular Static Mesh for that section.</p>
     <p>It has other features, should as letting you pick a specific Star and/or End mesh, to add pillars in between each section. Or pillars as start/end meshes.</p>
     <div id="Section">
         <div id="Element">
             <iframe id="video" src="https://www.youtube.com/embed/xQ0bNlmC1fA?si=_5JW63VRZFaqOeCN&amp;start=6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>A video</p>
+            <p>A video of the mesh wall actor being set up and used to build a wall with.</p>
         </div>
         <div id="Element">
             <img src="images/portfolio/MeshWallTool/C.jpg" title="Right click and open in new tab to see larger.">
@@ -55,8 +55,9 @@
             <p>So nothing uses Spline Meshes in this case.</p>
         </div>
     </div>
+ </div>
 
-    <hr>
+<div id="Group">
     <h2>SIMPLIFIED COLLISION TOOL (USED IN HOGWARTS LEGACY)</h2>
     <p>A Spline-Based simplified collision tool. I originally created a simpler version of it for my game Bandits, but suggested to the Hogwarts Legacy guys they needed it something like it.
         So I created this advanced version for that game.</p>
@@ -88,8 +89,9 @@
         </div>
         
     </div>
+</div>
 
-    <hr>
+<div id="Group">
     <h2>NETWORKED INVENTORY - ONLINE RPG PROTOTYPE</h2>
     <p>The essentials for an Online RPG; can equip things, can put things in containers, can put things on your inventory, and so on. Everything is properly replicated through Unreal's networking system. 
         <br>Server always has authority over all transactions.</p>
@@ -103,8 +105,9 @@
             <p>Everything is built around the uses of DataAssets to specify everything relevant to the items you interact with and move around through the inventories and their UIs.</p>
         </div>
     </div>
+</div>
 
-    <hr>
+<div id="Group">
     <h2>HOGWARTS LEGACY - PROXY TOOL </h2>
     <p>In this game the level were built in many sublevels used as layers, which made HLODs not a viable option. So I created a system that would use a SetupMap to load all the levels used on a buildings
         and capture a snapshot of it to generate a Proxy from, that included everything. This also suported the Winter variation that was covered in snow. At the end ProxyContainerActor was played on the LOD
@@ -135,8 +138,9 @@
     <p>The system also extended to the Landscape LODs, which used the same ProxyTool, but unbound, to generate a proxy of all the actors and meshes on the tile. There it performed specific steps for big rocks,
          hills, long spline tools, roads, and so on.<br>
          Everything combined was quite literally everything outside of the player nearby readius, including the entire Hogsmeade Town and the Hogwarts Castle, which was quite a lot of work to get right!</p>
+</div>
 
-    <hr>
+<div id="Group">
     <h2>HOGWARTS LEGACY - FAR FOLIAGE</h2>
     <p>A UE4 World Composition optimization that handles the far away foliage without ugly Tile LOD proxies. Also good to hide level streaming pops, as this system functions independently of it.
         As you move around the system updated which far foliage instances are rendered.
@@ -165,8 +169,9 @@
             <p>Should try to get a video of this working in-game...</p>
         </div>
     </div>
+</div>
 
-    <hr>
+<div id="Group">
     <h2>RPG SIMPLE DIALOGUE SYSTEM AND SETUP</h2>
     <p>The dialogue system has all you need without reinventing the wheel. It just uses Blueprints, and 4 custom C++ Nodes to handle everything. It supports regular lines, questions, branching dialogue, a fallback concluded state, interaction with the world, etc.</p>
     <div id="Section">
@@ -196,8 +201,9 @@
             <p>Another example. This one implements an altern bool specific to this script.</p>
         </div>
     </div>
+</div>
 
-    <hr>
+<div id="Group">
     <h2>MATERIALS FOR HALLUCINATION SEQUENCE</h2>
     <p>Done for Dune Awakening (Yager co-development with Funcom). The Spice Vision is a sequence where the player is having vivid hallucinations and sees people and other things made out of sand, water, or shadows.</p>
     <div id="Section">
@@ -218,8 +224,9 @@
             <p>Shadow Material</p>
         </div>
     </div>
+</div>    
 
-    <hr>
+<div id="Group">
     <h2>GRID MATERIAL</h2>
     <p>Very useful for prototypes or low poly games. Its a material that lets you use a Material Instance to pick the color of each one of its 16 sections.</p>
     <div id="Section">
@@ -240,14 +247,15 @@
             <p>Then on the Material Instance for these assets you select the colors each grid section should have. Super simple.</p>
         </div>        
     </div>
+</div>
 
-    <hr>
+<div id="Group">
     <h2>MISC.</h2>
     <p>Things I've done that are not part of any specific project.</p>
     <div id="Section">
         <div id="Element">
             <img src="images/portfolio/Library.jpg" title="Right click and open in new tab to see larger.">
-            <p>Since 2016 I've been growing and mainting a plugin with a large number of very useful functions that speed up my dev process.</p>
+            <p>Since 2016 I've been growing and mainting a plugin with a large number of very useful C++ functions exposed to Blueprints, that speed up my dev process.</p>
         </div>
         <div id="Element">
             <img src="images/portfolio/bridgeGif.gif" title="Right click and open in new tab to see larger.">
@@ -258,8 +266,9 @@
             <p>Prototyping the generation of hexagonal islands that start from a volcano-like central  high point and spread out until they "run out of energy", creating organic shapes.</p>
         </div>
     </div>
+</div>
 
-       <hr>
+<div id="Group">
     <h2>ASTERMINER (UE5, WIP)</h2>
     <p>Asterminer is a game where you control a truck-ship to explore around, collect crystals, and load them into a train.<br> It is based on an 
         <a href="https://www.youtube.com/watch?v=F08vHFyFJuI&list=PLvBAhItpoTLPmQBk8RtxaCn8x480wOEyu&index=4&ab_channel=BenerotEmpire">earlier game I made for Android/iOS</a>, which had over 50k+ premium downloads.</p>
@@ -282,8 +291,9 @@
             <p>This video is just a quick demo of how the junction is built inside the editor.</p>
         </div>        
     </div>
+</div>
 
-    <hr>
+<div id="Group">
     <h2>BANDITS (UE4, 2018, Steam) - Epic Mega Grant Recipient</h2>
     <p>Bandits was my first PC game released on Steam. It has a PvP mode, and a PvE story mode. It is very lowpoly in style, favoring gameplay and performance. 
         <a href="https://benerot.com/bandits.html">(Link to Game's Website)</a>
@@ -363,6 +373,7 @@
             <p>And agile sharp shooter, can trap enemies in a gravity well, and bring them down with its side gun.</p>
         </div>
     </div>
-    
+</div>    
+
 </main>
 </body>
