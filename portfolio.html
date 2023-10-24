@@ -25,7 +25,10 @@
     
 <div id="Group">
     <h2>SIMPLIFIED COLLISION TOOL</h2>
-    <p>I have developed a spline-based simplified collision tool. The tool employs a single InstancedStaticMeshComponent with an 8-verts box mesh, which is scaled for each segment. What sets this tool apart is its efficient handling of the spline's curvature. It only produces new sections when the curvature demands it, otherwise, it intelligently scales the existing section to accommodate straight stretches. Originally, I crafted a more basic version for my game "Bandits." Recognizing its potential, I later proposed and refined an advanced version for the "Hogwarts Legacy" team.</p>
+    <p>I have developed a spline-based simplified collision tool. The tool employs a single InstancedStaticMeshComponent with an 8-verts box mesh, which is scaled for each segment. 
+        What sets this tool apart is its efficient handling of the spline's curvature. It only produces new sections when the curvature demands it, otherwise, it intelligently 
+        scales the existing section to accommodate straight stretches. Originally, I crafted a more basic version for my game "Bandits." Recognizing its potential, I later 
+        proposed and refined an advanced version for the "Hogwarts Legacy" team.</p>
     <div id="Section">
         <div id="Element">
             <p>It's efficient to process. While it's designed not to be overly lengthy, it can be, without causing noticeable hitches in the editor.</p>
@@ -132,7 +135,6 @@
         </div>
         <div id="Element">
             <p>As players move, the runtime system determines which distant foliage should be displayed. Meanwhile, the standard foliage utilizes Unreal's native optimization, fading out foliage beyond a set max-draw distance. Additionally, the system includes other enhancements, such as evaluating only after significant player movement, ensuring tiles are within the viewing frustum, and verifying they are not too far to be relevant at the time.</p>
-            <p>I might try to capture a video of this in action in-game...</p>
         </div>
     </div>
 </div>
