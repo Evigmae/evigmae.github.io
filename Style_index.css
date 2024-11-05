@@ -110,10 +110,10 @@ header img{
 #B01.card{background-image: url(images/IB_B01.png);}
 #B01.card:hover{background-image: url(images/IB_B01_hover.png);}
 
-/*Project Hermes*/
-#Project_Hermes{grid-column: 3/5;}
-#B05.card{background-image: url(images/IB_B05.png);}
-#B05.card:hover{background-image: url(images/IB_B05_hover.png);}
+/*Project Vulcan*/
+#Project_Vulcan{grid-column: 3/5;}
+#C02.card{background-image: url(images/IB_C02.png);}
+#C02.card:hover{background-image: url(images/IB_C02_hover.png);}
 
 /*Bandits: Enter the Fray*/
 #Bandits_2{grid-column: 1/3;}

@@ -1,0 +1,133 @@
+/*----------------------------------------------------------*/
+/*ECHOES OF UNREST*/
+/*----------------------------------------------------------*/
+body{
+    margin: 0;
+    background-color: #070707;
+}
+/*----------------------------------------------------------*/
+/*HEADER IMG AND TITLE*/
+/*----------------------------------------------------------*/
+#niceimg{
+    height: 100%;
+    width: 100%;
+    background-color: #363636;
+}
+#niceimg img{
+    width: 100%;
+    margin-bottom: -4px;
+}
+/*----------------------------------------------------------*/
+/*SOCIAL MEDIA LINKS*/
+/*----------------------------------------------------------*/
+#social{
+    width: 900px;
+    height: 75px;
+    text-align: center;
+    margin: 25px auto;
+    display: grid;
+    grid-auto-flow: column;
+}
+.brand{
+    height: 75px;
+    width: 75px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.25s;
+}
+#Twitter.brand{background-image: url(images/b_twitter.png);}
+#Twitter.brand:hover{background-image: url(images/b_twitter_color.png);}
+#Steam.brand{background-image: url(images/b_steam.png);}
+#Steam.brand:hover{background-image: url(images/b_steam_color.png);}
+#Discord.brand{background-image: url(images/b_discord.png);}
+#Discord.brand:hover{background-image: url(images/b_discord_color.png);}
+#Twitch.brand{background-image: url(images/b_twitch.png);}
+#Twitch.brand:hover{background-image: url(images/b_twitch_color.png);}
+#Instagram.brand{background-image: url(images/b_instagram.png);}
+#Instagram.brand:hover{background-image: url(images/b_instagram_color.png);}
+#Facebook.brand{background-image: url(images/b_facebook.png);}
+#Facebook.brand:hover{background-image: url(images/b_facebook_color.png);}
+#Youtube.brand{background-image: url(images/b_youtube.png);}
+#Youtube.brand:hover{background-image: url(images/b_youtube_color.png);}
+/*----------------------------------------------------------*/
+/*MAIN*/
+/*----------------------------------------------------------*/
+#content{
+    width: 900px;
+    margin: 20px auto;
+    text-align: justify;
+    font-family: consolas, arial, sans-serif;
+    color: #eee;
+    font-size: 22px;
+}
+/*----------------------------------------------------------*/
+/*VIDEO*/
+/*----------------------------------------------------------*/
+#video{
+    width: 900px;
+    height: 500px;
+    margin: 25px 0px;
+}
+/*----------------------------------------------------------*/
+/*ABOUT*/
+/*----------------------------------------------------------*/
+#GameInfo{
+    padding-top: 0px;
+    height: auto;
+    margin-bottom: 50px;
+}
+#GameInfo p{
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+#GameInfo h2{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#GameInfo h3{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#GameInfo img{
+    width: 900px;
+    margin: 20px 0px;
+}
+/*----------------------------------------------------------*/
+/*BACK TO MAIN*/
+/*----------------------------------------------------------*/
+footer{
+    text-align: center;
+    width: 200px;
+    margin: 25px auto;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    transition: background-color 0.25s;
+}
+footer p{
+    padding: 10px;
+}
+footer:hover{background-color: #444;}
+/*----------------------------------------------------------*/
+/*EXTRAS*/
+/*----------------------------------------------------------*/
+#DiscordLink{
+    background-image: url(images/Discord.png);
+    margin: 25px auto;
+    height: 76px;
+    width: 306px;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+hr{width: 900px;}
+#preload img{height: 0;}
+a:link{text-decoration:none; color:white;}
+a:visited{text-decoration:none; color:white;}
+a:hover{text-decoration:none; color:#cccccc;}
+a:active{text-decoration:none; color:white;}
