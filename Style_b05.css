@@ -36,8 +36,10 @@ body{
     background-repeat: no-repeat;
     transition: background-image 0.25s;
 }
-#Twitter.brand{background-image: url(images/b_twitter.png);}
-#Twitter.brand:hover{background-image: url(images/b_twitter_color.png);}
+#X.brand{background-image: url(images/b_x.png);}
+#X.brand:hover{background-image: url(images/b_x_color.png);}
+#Bluesky.brand{background-image: url(images/b_bluesky.png);}
+#Bluesky.brand:hover{background-image: url(images/b_bluesky_color.png);}
 #Steam.brand{background-image: url(images/b_steam.png);}
 #Steam.brand:hover{background-image: url(images/b_steam_color.png);}
 #Discord.brand{background-image: url(images/b_discord.png);}
@@ -46,8 +48,6 @@ body{
 #Twitch.brand:hover{background-image: url(images/b_twitch_color.png);}
 #Instagram.brand{background-image: url(images/b_instagram.png);}
 #Instagram.brand:hover{background-image: url(images/b_instagram_color.png);}
-#Facebook.brand{background-image: url(images/b_facebook.png);}
-#Facebook.brand:hover{background-image: url(images/b_facebook_color.png);}
 #Youtube.brand{background-image: url(images/b_youtube.png);}
 #Youtube.brand:hover{background-image: url(images/b_youtube_color.png);}
 /*----------------------------------------------------------*/
