@@ -120,20 +120,12 @@ footer:hover{background-color: #444;}
 /*----------------------------------------------------------*/
 /*EXTRAS*/
 /*----------------------------------------------------------*/
-#DiscordLink{
-    background-image: url(images/Discord.png);
-    margin: 25px auto;
-    height: 76px;
-    width: 306px;
-    text-align: center;
-    background-size: contain;
-    background-repeat: no-repeat;   
-}
 #MailingList{
     background-image: url(images/b_mail.png);
-    margin: 15px 0px 20px 10px;
+    background-color: #444;
+    margin: 0px auto 50px auto;
     height: 75px;
-    width: 250px;
+    width: 320px;
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -141,8 +133,9 @@ footer:hover{background-color: #444;}
 }
 #MailingList:hover{background-image: url(images/b_mail_hover.png);}
 #MailingList p{
-    margin: 0px;
-    padding: 25px 0px 0px 60px;
+    margin: 0px 0px 0px 60px;    
+    padding: 10px 0px;
+    border: 0px;
 }
 
 hr{width: 900px;}

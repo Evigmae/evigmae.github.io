@@ -21,6 +21,7 @@ a:hover{text-decoration:none; color:#fff;}
 a:active{text-decoration:none; color:#999;}
 
 #preload img{height: 0;}
+
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 /*Benerot Title Name*/
@@ -33,9 +34,11 @@ header{
 header img{
     width: 900px;
 }
+
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 /*Social Media Links*/
+
 #social{
     width: 900px;
     height: 75px;
@@ -52,6 +55,7 @@ header img{
     background-repeat: no-repeat;
     transition: background-image 0.25s;
 }
+
 #X.brand{background-image: url(images/b_x.png);}
 #X.brand:hover{background-image: url(images/b_x_color.png);}
 #Bluesky.brand{background-image: url(images/b_bluesky.png);}
@@ -163,7 +167,6 @@ header img{
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
 /*About*/
-
 #about{
     margin: 0px auto 0px auto;
     padding: 15px;
