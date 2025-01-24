@@ -117,8 +117,8 @@ header img{
 /*IN DEVELOPMENT*/
 
 /*Project Vulcan*/
-#Project_Vulcan{grid-column: 2/4;}
-#C02.card{background-image: url(images/IB_C02.png);}
+#Project_Vulcan{grid-column: 1/5;}
+#C02.card{background-image: url(images/IB_C02.png);height: 460px;}
 #C02.card:hover{background-image: url(images/IB_C02_hover.png);}
 
 /*----------------------------------------------------------*/
