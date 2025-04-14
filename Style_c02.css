@@ -97,6 +97,7 @@ body{
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 10px;
+    align-items: center;
 }
 #GameInfo h3{
     font-size: 30px;
@@ -104,8 +105,9 @@ body{
     margin-bottom: 5px;
 }
 #GameInfo img{
-    width: 900px;
-    margin: 20px 0px;
+    width: 800px;
+    margin: 20px auto;
+    display: block;
 }
 #GameInfo a{
     color: #9e9e9e;
