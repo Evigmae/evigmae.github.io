@@ -98,6 +98,7 @@ footer{
     color: #fff;
     background-color: #333;
     transition: background-color 0.25s;
+    border-radius: 10px;
 }
 footer p{
     padding: 10px;
@@ -115,6 +116,7 @@ footer:hover{background-color: #444;}
     background-size: contain;
     background-repeat: no-repeat;
     transition: background-image 0.25s;
+    border-radius: 10px;
 }
 #MailingList:hover{background-image: url(images/b_mail_hover.png);}
 #MailingList p{

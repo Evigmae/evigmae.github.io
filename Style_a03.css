@@ -115,6 +115,7 @@ footer{
     color: #fff;
     background-color: #333;
     transition: background-color 0.25s;
+    border-radius: 10px;
 }
 footer p{
     padding: 10px;
