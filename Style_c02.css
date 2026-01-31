@@ -57,11 +57,11 @@ body{
 /*----------------------------------------------------------*/
 #content{
     width: 900px;
-    margin: 20px auto;
-    text-align: justify;
-    font-family: consolas, arial, sans-serif;
+    margin: 10px auto;
+    text-align: left;
+    font-family: helvetica, arial, sans-serif;
     color: #eee;
-    font-size: 22px;
+    font-size: 20px;
 }
 /*----------------------------------------------------------*/
 /*STEAM*/
@@ -83,9 +83,11 @@ body{
 /*ABOUT*/
 /*----------------------------------------------------------*/
 #GameInfo{
-    padding-top: 0px;
+    width: 900px;
     height: auto;
-    margin-bottom: 50px;
+    margin: 10px auto;
+    padding: 0px;
+    text-align: justify;
 }
 #GameInfo p, ul{
     font-size: 18px;
@@ -123,20 +125,19 @@ body{
 /*----------------------------------------------------------*/
 #MailingList{
     background-image: url(images/b_mail.png);
-    background-color: #444;
-    margin: 0px auto 50px auto;
+    margin: 15px auto;
     height: 75px;
-    width: 320px;
+    width: 300px;
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
     transition: background-image 0.25s;
+    border-radius: 10px;
 }
 #MailingList:hover{background-image: url(images/b_mail_hover.png);}
 #MailingList p{
-    margin: 0px 0px 0px 60px;    
-    padding: 10px 0px;
-    border: 0px;
+    margin: 0px;
+    padding: 25px 0px 0px 60px;
 }
 
 hr{width: 900px; margin: 20px 0px;}
