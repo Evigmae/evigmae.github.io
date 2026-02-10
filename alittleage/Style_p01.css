@@ -36,20 +36,20 @@ body{
     background-repeat: no-repeat;
     transition: background-image 0.25s;
 }
-#X.brand{background-image: url(images/b_x.png);}
-#X.brand:hover{background-image: url(images/b_x_color.png);}
-#Bluesky.brand{background-image: url(images/b_bluesky.png);}
-#Bluesky.brand:hover{background-image: url(images/b_bluesky_color.png);}
-#Steam.brand{background-image: url(images/b_steam.png);}
-#Steam.brand:hover{background-image: url(images/b_steam_color.png);}
-#Discord.brand{background-image: url(images/b_discord.png);}
-#Discord.brand:hover{background-image: url(images/b_discord_color.png);}
-#Twitch.brand{background-image: url(images/b_twitch.png);}
-#Twitch.brand:hover{background-image: url(images/b_twitch_color.png);}
-#Instagram.brand{background-image: url(images/b_instagram.png);}
-#Instagram.brand:hover{background-image: url(images/b_instagram_color.png);}
-#Youtube.brand{background-image: url(images/b_youtube.png);}
-#Youtube.brand:hover{background-image: url(images/b_youtube_color.png);}
+#X.brand{background-image: url(../images/b_x.png);}
+#X.brand:hover{background-image: url(../images/b_x_color.png);}
+#Bluesky.brand{background-image: url(../images/b_bluesky.png);}
+#Bluesky.brand:hover{background-image: url(../images/b_bluesky_color.png);}
+#Steam.brand{background-image: url(../images/b_steam.png);}
+#Steam.brand:hover{background-image: url(../images/b_steam_color.png);}
+#Discord.brand{background-image: url(../images/b_discord.png);}
+#Discord.brand:hover{background-image: url(../images/b_discord_color.png);}
+#Twitch.brand{background-image: url(../images/b_twitch.png);}
+#Twitch.brand:hover{background-image: url(../images/b_twitch_color.png);}
+#Instagram.brand{background-image: url(../images/b_instagram.png);}
+#Instagram.brand:hover{background-image: url(../images/b_instagram_color.png);}
+#Youtube.brand{background-image: url(../images/b_youtube.png);}
+#Youtube.brand:hover{background-image: url(../images/b_youtube_color.png);}
 /*----------------------------------------------------------*/
 /*MAIN*/
 /*----------------------------------------------------------*/
@@ -97,26 +97,38 @@ body{
 /*----------------------------------------------------------*/
 /*BACK TO MAIN*/
 /*----------------------------------------------------------*/
-footer{
-    text-align: center;
-    width: 200px;
-    margin: 25px auto;
-    font-family: arial, sans-serif;
-    font-size: 18px;
-    color: #fff;
-    background-color: #333;
-    transition: background-color 0.25s;
-    border-radius: 10px;
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 25px auto;
 }
-footer p{
-    padding: 10px;
+
+.footer-btn {
+  text-align: center;
+  width: 200px;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background-color: #333;
+  transition: background-color 0.25s;
+  border-radius: 10px;
+  cursor: pointer;
 }
-footer:hover{background-color: #444;}
+
+.footer-btn p {
+  padding: 10px;
+  margin: 0;
+}
+
+.footer-btn:hover {
+  background-color: #444;
+}
 /*----------------------------------------------------------*/
 /*EXTRAS*/
 /*----------------------------------------------------------*/
 #MailingList{
-    background-image: url(images/b_mail.png);
+    background-image: url(../images/b_mail.png);
     margin: 15px auto;
     height: 75px;
     width: 300px;
@@ -126,14 +138,14 @@ footer:hover{background-color: #444;}
     transition: background-image 0.25s;
     border-radius: 10px;
 }
-#MailingList:hover{background-image: url(images/b_mail_hover.png);}
+#MailingList:hover{background-image: url(../images/b_mail_hover.png);}
 #MailingList p{
     margin: 0px;
     padding: 25px 0px 0px 60px;
 }
 
 #DiscordLink{
-    background-image: url(images/Discord.png);
+    background-image: url(../images/Discord.png);
     margin: 40px auto 25px auto;
     height: 76px;
     width: 306px;
