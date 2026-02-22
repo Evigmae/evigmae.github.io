@@ -1,0 +1,365 @@
+[
+  {
+    "version": "068",
+    "date": "",
+    "items": 
+    [
+      "Downgraded to DX11/SM5",
+      "FPS increased considerably",
+      "Cleaned up UI",
+      "Max FPS 60 as default (otherwise it can go to 120+ fps, and there's no need for that.)"
+    ]
+  },
+  {
+    "version": "067",
+    "date": "",
+    "items": 
+    [
+        "Made Factory and Airfield 15% smaller.",
+        "Moved the front of the building arrow from the structure to the edge of the radius so it reads better.",
+        "VFXs improved from a simple radial burst to a more complex multi-component effect (WIP)"
+    ]
+  },
+  {
+    "version": "066",
+    "date": "",
+    "items": 
+    [
+        "Fixed some typos and improved legibility",
+        "Added a big pink feedback button on all screens"
+    ]
+  },
+  {
+    "version": "065",
+    "date": "",
+    "items": 
+    [
+        "Added a how to play and a 'what are turn tokens' thingy you can click in a Battles match",
+        "Mouse cursor stays put when you rotate the camera",
+        "Fixed compass not showing up",
+        "Start Menu and Online Menu background image now correctly supports any aspect ratio"
+    ]
+  },
+  {
+    "version": "064",
+    "date": "",
+    "items": 
+    [
+        "Added Additional Hotkeys",
+        "Added dedicated controls/hotkey info button",
+        "UE Command Console disabled by default, but can be toggled on/off inside dev menu"
+    ]
+  },
+  {
+    "version": "063",
+    "date": "",
+    "items": 
+    [
+        "RoboPlayer now has the concept of 'objectives' and spreads its efforts.",
+        "When playing vs the RoboPlayer you can pick maps A or B",
+        "Game messages are smaller and less intrusive",
+        "Build renamed to 'Gameplay Demo'"
+    ]
+  },
+  {
+    "version": "062",
+    "date": "",
+    "items": 
+    [
+        "Camera starts on a more sensible position",
+        "HQ Player flags gets updated on HQ capture",
+        "RoboPlayer now wants to make helicopters",
+        "RoboPlayer non-infantry prioritise attacking enemy units over moving towards capturable structures"
+    ]
+  },
+  {
+    "version": "061",
+    "date": "",
+    "items": 
+    [
+        "Match End Conditions (No HQ or No Units = Defeat!)",
+        "Match end overlay",
+        "Fixed Online play ID issue",
+        "Fix Lobby music on client persisting beyond the lobby"
+    ]
+  },
+  {
+    "version": "060",
+    "date": "",
+    "items": 
+    [
+        "When playing online your account avatar appears as a flag on top of your HQ",
+        "RoboPlayer gets a RoboPlayer flag!",
+        "Structures can now only be blocked if no ally is in radius. Last Man Standing!",
+        "Increased Structure capture radius to 170, from 140"
+    ]
+  },
+  {
+    "version": "059",
+    "date": "",
+    "items": 
+    [
+        "Tidied up the maps so they conform the the grid.",
+        "Can pick map in solo play"
+    ]
+  },
+  {
+    "version": "058",
+    "date": "",
+    "items": 
+    [
+        "Robo Player now makes some units, can move, capture, and attack. Still pretty basic.",
+        "Some iteration and bug fixes."
+    ]
+  },
+  {
+    "version": "057",
+    "date": "",
+    "items": 
+    [
+        "Tech Demo QL 0.5 Art pass",
+        "Updated Units, Structures, and Environment assets",
+        "Updated VFXs and added a few new ones",
+        "Updated Unit and Structure thumbnails",
+        "Added Ability Icons",
+        "Replaced placeholder background",
+        "Added Solo Play vs Robo-Player (Just keeps the round going for now)"
+    ]
+  },
+  {
+    "version": "056",
+    "date": "",
+    "items": 
+    [
+        "Game has sound and music (QL0)",
+        "Game has audio settings",
+        "When starting a game Solo, you can do the full round normally withouth dev commands."
+    ]
+  },
+  {
+    "version": "055",
+    "date": "",
+    "items": 
+    [
+        "Some UI tweaks",
+        "Helicopter fuel up to 60, from 30",
+        "Trying to 'capture structure point' on an unit no longer ruins everything",
+        "Attacks no longer randomly miss (the actual hit trace and the preview were doing different vectors!)",
+        "Fixed being able to click-confirm actions while hovering on the UI"
+    ]
+  },
+  {
+    "version": "054",
+    "date": "",
+    "items": 
+    [
+        "Refactored Attack Sequence",
+        "Attacks show a range in preview, and a popup on hit"
+    ]
+  },
+  {
+    "version": "053",
+    "date": "",
+    "items": 
+    [
+        "Air units navigation issues fixed.- ",
+        "Unit Purchase buttons are enabled/disabled depending on purchase power.",
+        "Unit Purchase Panel made a bit fancier",
+        "Replaced unit prototype debug info with a proper UI element.",
+        "Both on unit widget and pending action elegible units are green in elegible, and yellow if elegile and activated.",
+        "Pending action now has tooltip with unit data"
+    ]
+  },
+  {
+    "version": "052",
+    "date": "",
+    "items": 
+    [
+        "Units and abilities now have meaningful fuel and ammo values set on them.",
+        "You can now see actor data on enemy stuff when selected.",
+        "Some additional UI cleanup.",
+        "Fixed issue with building selection and start of management phase.",
+        "When you hover over an ability, you see radius displayed around unit."
+    ]
+  },
+  {
+    "version": "051",
+    "date": "",
+    "items": 
+    [
+        "Fixed navigation issue related to partial unit movement.",
+        "Tolerance for units reaching destination was increased from 5 to 10 cm.",
+        "Infantry not only has 3 dudes, down from 5.",
+        "Helicopter is now a light unit, was medium before.",
+        "Scout now has 9 hp, up from 6."
+    ]
+  },
+  {
+    "version": "050",
+    "date": "",
+    "items": 
+    [
+        "Main Overlay UI refactor and element distribution.",
+        "General UI revisions here and there.",
+        "Units in Pending Action Panel appear sorted by unit type, with the fastest/lights units at the top."
+    ]
+  },
+  {
+    "version": "049",
+    "date": "",
+    "items": 
+    [
+        "Refactored the Pending Action Panel so its a lot more robust.",
+        "Mouse over a thumbnail on the panel will highlight the matching unit."
+    ]
+  },
+  {
+    "version": "048",
+    "date": "",
+    "items": 
+    [
+        "Improved unit movement/selection implementation.",
+        "Since movement no longer cost Command Tokens all units start with 1.",
+        "Removed limit of 1 ability per round. now the limit is how many you can afford. Currently there's no way of having more than 1 CT though."
+    ]
+  },
+  {
+    "version": "047",
+    "date": "",
+    "items": 
+    [
+        "'Move Action' removed from Unit Panel.",
+        "Actions as a concept has been removed. Everythign not-movement is simply an Ability.",
+        "Moving no longer consumes a Command Token.",
+        "Moving preview is the default state of units that can move.",
+        "Units can move freely up to their max per round.",
+        "Selecting an ability replaces previous preview.",
+        "Having the mouse over UI elements blocks preview actions so you don't accidentally do unwanted stuff."
+    ]
+  },
+  {
+    "version": "046",
+    "date": "",
+    "items": 
+    [
+        "On unit ability tooltip added if they can attack air/land targets.",
+        "When camera does 'focus' you lose camera input intil it finishes (takes 0.5 seconds!).",
+        "Attack preview and excecution should be more consistent now.",
+        "Made Depots 30% smaller.",
+        "Made the debug text on top of units easier to understand.",
+        "Added an easier to see hover/selected circle around units."
+    ]
+  },
+  {
+    "version": "045",
+    "date": "",
+    "items": 
+    [
+        "Improved targeting checks and when you can't attacks.",
+        "Can't see your own drone."
+    ]
+  },
+  {
+    "version": "044",
+    "date": "",
+    "items": 
+    [
+        "Added more depots to the levels to have more income to get to mid-game faster",
+        "Infantry is a bit cheaper and moves a bit further",
+        "Reduced helicopter move speed a bit",
+        "Reduced artillery attack range a bit"
+    ]
+  },
+  {
+    "version": "043",
+    "date": "",
+    "items": 
+    [
+        "Implemented Damage/Defense framework, damage is not directly applied anymore. See 'Dmg/Def Framework'.",
+        "Fixed issue with building cature-overlap radius blocking attacks.",
+        "tweaks and fixes here and there."
+    ]
+  },
+  {
+    "version": "042",
+    "date": "",
+    "items": 
+    [
+        "Aim/attack system fully reworked to account for land/air attacks.",
+        "fixed store showing incorrect thumbnail.",
+        "fixed merged units now updating their owner."
+    ]
+  },
+  {
+    "version": "041",
+    "date": "",
+    "items": 
+    [
+        "Turn setup system has been reworked. Bunch of bugs fixed.",
+        "Unit Command Token system introduced as a rework of action/abilities.",
+        "Turn Token system reworked; Units are now categorised as Light, Medium, or Heavy. So tokens now have a speed and a weight class.",
+        "AB Test: Unit not usable same round you purchase them.",
+        "AB Test: Structures can only repair 1 unit per round."
+    ]
+  },
+  {
+    "version": "040",
+    "date": "",
+    "items": 
+    [
+        "You can see other players as drones flying over the battlefield.",
+        "1st air unit: Helicopter!",
+        "Airport structure; it makes the Helicopter."
+    ]
+  },
+  {
+    "version": "039",
+    "date": "",
+    "items": 
+    [
+        "Added AntiAir Unit.",
+        "fixed structure spawn issue.",
+        "Camera can't escape the world anymore.",
+        "fixed some various minor issues."
+    ]
+  },
+  {
+    "version": "038",
+    "date": "",
+    "items": 
+    [
+        "Fixed Turn Token bug! Note: When an unit died never been activated the 'pick last token to burn' wasn't checking if the token was already consumed, it was just picking the last token over and over again!",
+        "Camera can no longer descend bellow the building tops.",
+        "Fixed some Messaging System issues and incorrect tagging."
+    ]
+  },
+  {
+    "version": "037",
+    "date": "",
+    "items": 
+    [
+        "Created a second map to play.",
+        "Server can pick which map to play from lobby."
+    ]
+  },
+  {
+    "version": "036",
+    "date": "",
+    "items": 
+    [
+        "Individual unit members rotate their guns to attack at targers.",
+        "Added initial QL-0 VFXs to attacks and attack hits.",
+        "Added initial QL-0 explosion to unit death.",
+        "If you press F camera moves to selected unit or structure."
+    ]
+  },
+  {
+    "version": "035",
+    "date": "",
+    "items": 
+    [
+        "Added changelog :D",
+        "Added a compass."
+    ]
+  }
+]
