@@ -2,16 +2,21 @@
   {
     "version": "v1.1",
     "date": "2026/02/22",
-    "items": [
+    "items": 
+    [
       "Added Changelog",
       "Added Gold production timer to settlement",
-      "Added Camera Zoom Control"
+      "Added Camera Zoom Control",
+      "Added Material cost to Buildings",
+      "Added Food cost to Senders",
+      "Renamed Hunterslodge to Forestlodge"
     ]
   },
   {
     "version": "v1.0",
     "date": "2026/02/10",
-    "items": [
+    "items": 
+    [
       "Start of Playtest"
     ]
   }
