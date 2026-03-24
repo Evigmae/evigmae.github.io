@@ -1,5 +1,21 @@
 [
   {
+    "version": "v1.2",
+    "date": "2026/03/24",
+    "items":
+    [
+      "Hamlet no longer upgrades automatically",
+      "Start location is now automatically selected",
+      "Only start location is clear of clouds",
+      "New Waypost building that is used to explore the world",
+      "Forestlodge placement now behaves like the woodcamp",
+      "Added Raining and Snowing weather states",
+      "Added per buildings prerequisite conditions",
+      "Re-ordered Buildings list so woodcamp is first",
+      "Many art tweaks"
+    ]
+  }
+  {
     "version": "v1.1",
     "date": "2026/02/22",
     "items": 
