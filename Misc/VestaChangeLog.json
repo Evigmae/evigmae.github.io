@@ -1,21 +1,31 @@
 [
   {
+    "version": "v1.3",
+    "date": "2026/03/28",
+    "items":
+    [
+      "when settlement fails to generate gold it slows down",
+      "Added Camera Edge Panning",
+      "Fixed a pathing bug affecting senders",
+      "Various cloud clearance radius tweaks",
+      "Additional resource balance tweaks",
+      "Additional Art and UI tweaks"
+    ]
+  },
+  {
     "version": "v1.2",
     "date": "2026/03/24",
     "items":
     [
       "New experience system that replaces Civ Points",
       "Building things now grants experience",
-      "Hamlet no longer upgrades automatically",
-      "Start location is now automatically selected",
-      "Only start location is clear of clouds",
+      "Start area is now automatically selected",
+      "Only start area is clear of clouds",
       "New Waypost building that is used to clear clouds",
       "Forestlodge placement distances now similar to Woodcamp",
       "Added Raining and Snowing weather states",
       "Added per buildings prerequisite conditions",
       "Re-ordered Buildings list so Woodcamp is first",
-      "Camera screen edge panning",
-      "New Onboarding widget that replaces notifications one",
       "Large balance pass",
       "Many art tweaks"
     ]
