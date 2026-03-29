@@ -6,6 +6,7 @@
     [
       "when settlement fails to generate gold it slows down",
       "Added Camera Edge Panning",
+      "Added Edge Pan and Bloom settings",
       "Fixed a pathing bug affecting senders",
       "Various cloud clearance radius tweaks",
       "Additional resource balance tweaks",
