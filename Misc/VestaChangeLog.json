@@ -4,13 +4,14 @@
     "date": "2026/03/28",
     "items":
     [
-      "when settlement fails to generate gold it slows down",
+      "When settlement fails to generate gold it slows down for a bit",
+      "Fixed a pathing bug affecting senders when production and settlement were too close",
       "Added Camera Edge Panning",
       "Added Edge Pan and Bloom settings",
-      "Fixed a pathing bug affecting senders",
       "Various cloud clearance radius tweaks",
       "Additional resource balance tweaks",
-      "Additional Art and UI tweaks"
+      "Additional Art and UI tweaks",
+      "Removed notifications widget entirely"
     ]
   },
   {
