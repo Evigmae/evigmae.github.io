@@ -1,4 +1,12 @@
 [
+      {
+    "version": "Playtest 1.4.1",
+    "date": "2026/03/30",
+    "items":
+    [
+      "Edge Panning is now prevented by mouse is over UI buttons"
+    ]
+  },
     {
     "version": "Playtest 1.4",
     "date": "2026/03/30",
@@ -6,7 +14,7 @@
     [
       "Updated the How To Play information",
       "Game start with a How To Play window (Placeholder for the real Onboarding)",
-      "Updated building thumbnails and descriptions"
+      "Updated buildings thumbnails and descriptions"
     ]
   },
   {
@@ -14,14 +22,14 @@
     "date": "2026/03/28",
     "items":
     [
-      "When settlement fails to generate gold it slows down for a bit",
+      "When settlement fails to generate gold it slows down for a few cycles",
       "Fixed a pathing bug affecting senders when production and settlement were too close",
       "Added Camera Edge Panning",
       "Added Edge Pan and Bloom settings",
       "Various cloud clearance radius tweaks",
       "Additional resource balance tweaks",
       "Additional Art and UI tweaks",
-      "Removed notifications widget entirely"
+      "Removed notifications widget for now."
     ]
   },
   {
