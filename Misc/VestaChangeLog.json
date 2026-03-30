@@ -1,5 +1,14 @@
 [
-      {
+  {
+    "version": "Playtest 1.4.2",
+    "date": "2026/03/31",
+    "items":
+    [
+      "Added notifications back in, but simplified",
+      "Fixed exp orb flying to corner not visible"
+    ]
+  },
+  {
     "version": "Playtest 1.4.1",
     "date": "2026/03/30",
     "items":
@@ -7,7 +16,7 @@
       "Edge Panning is now prevented when the cursor is over UI buttons"
     ]
   },
-    {
+  {
     "version": "Playtest 1.4",
     "date": "2026/03/30",
     "items":
