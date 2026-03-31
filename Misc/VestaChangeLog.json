@@ -1,4 +1,13 @@
 [
+    {
+    "version": "Playtest 1.4.3",
+    "date": "2026/03/31",
+    "items":
+    [
+      "Farm max yield at 32 farms, down from 36",
+      "Can no longer edge-pan the camera while in the victory screen or during initial popup."
+    ]
+  },
   {
     "version": "Playtest 1.4.2",
     "date": "2026/03/31",
