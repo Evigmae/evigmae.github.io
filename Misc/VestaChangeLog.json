@@ -1,5 +1,15 @@
 [
-    {
+  {
+    "version": "Playtest 1.4.4",
+    "date": "2026/03/31",
+    "items":
+    [
+      "Fixed issue with Edge Panning annoyingly moving the camera after you pressed a button near the edge",
+      "Temple progress bar is now visually split in four",
+      "Increased building description font size a bit"
+    ]
+  },
+  {
     "version": "Playtest 1.4.3",
     "date": "2026/03/31",
     "items":
