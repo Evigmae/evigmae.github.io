@@ -6,7 +6,8 @@
     [
       "Fixed issue with Edge Panning annoyingly moving the camera after you pressed a button near the edge",
       "Temple progress bar is now visually split in four",
-      "Increased building description font size a bit"
+      "Increased building description font size a bit",
+      "New mouse cursor"
     ]
   },
   {
