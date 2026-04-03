@@ -1,5 +1,15 @@
 [
   {
+    "version": "Playtest 1.4.5",
+    "date": "2026/04/03",
+    "items":
+    [
+      "SETTLEMENT POINTS renamed to CIVILIZATION LEVEL, to reflect how it actually works now",
+      "Further improved the camera edge panning",
+      "Shifted keyboard hotkeys to better fit QERTZ layouts: ZXCV to XCVB."
+    ]
+  },
+  {
     "version": "Playtest 1.4.4",
     "date": "2026/03/31",
     "items":
