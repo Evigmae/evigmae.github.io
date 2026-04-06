@@ -1,5 +1,16 @@
 [
   {
+    "version": "Playtest 1.5",
+    "date": "2026/04/03",
+    "items":
+    [
+      "New Onboarding/Objectives Panel (v1)",
+      "Improved Camera Zoom smoothness",
+      "Added subtle thunder sounds to the lategame soundscape",
+      "Various teaks and fixes"
+    ]
+  },
+  {
     "version": "Playtest 1.4.5",
     "date": "2026/04/03",
     "items":
