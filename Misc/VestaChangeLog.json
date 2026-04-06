@@ -1,5 +1,13 @@
 [
   {
+    "version": "Demo 1.0",
+    "date": "2026/04/03",
+    "items":
+    [
+      "Demo 1.0 is released."
+    ]
+  },
+  {
     "version": "Playtest 1.5",
     "date": "2026/04/03",
     "items":
@@ -7,6 +15,7 @@
       "New Onboarding and Objectives Panel (v1)",
       "Improved Camera Zoom smoothness",
       "Added subtle thunder sounds to the lategame soundscape",
+      "Farms now ramp up faster and reach max speed earlier.",
       "Various tweaks and fixes"
     ]
   },
