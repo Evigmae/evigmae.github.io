@@ -1,6 +1,16 @@
 [
   {
-    "version": "Demo 1.0.1",
+    "version": "Demo 1.02",
+    "date": "2026/04/09",
+    "items":
+    [
+      "Improved prices color so can or can't afford is clearer",
+      "Updated 'Welcome' and 'How to Play' texts",
+      "Small balance tweak"
+    ]
+  },
+  {
+    "version": "Demo 1.01",
     "date": "2026/04/06",
     "items":
     [
