@@ -1,4 +1,13 @@
-[
+[  
+  {
+    "version": "Demo 1.03",
+    "date": "2026/04/10",
+    "items":
+    [
+      "Improved buildings text for clarity",
+      "Added option on welcome popup to skip tutorial on start"
+    ]
+  },
   {
     "version": "Demo 1.02",
     "date": "2026/04/09",
