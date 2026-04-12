@@ -16,7 +16,7 @@
     "date": "2026/04/11",
     "items":
     [
-      "Fixed temple first segment completting at 1/5 instead of 1/4",
+      "Fixed temple first segment completing at 1/5 instead of 1/4",
       "Extended tutorial to include completing the temple",
       "Reworked how weather events works, from milder to harsher as you complete the temple, instead of just being a fixed event type",
       "Removed light changes related to temple progress"
