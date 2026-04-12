@@ -1,5 +1,17 @@
 [
   {
+    "version": "Demo 1.05",
+    "date": "2026/04/12",
+    "items":
+    [
+      "Fixed issue with starting area not being close enough to a Mountain",
+      "Updated buildings descriptions so their role is clearer",
+      "Fixed incorrectly assigned spanish loc text",
+      "Added settlement-colored meeple on UI, will continue iterating on this",
+      "Made Sender UI's destination easier to navigate"
+    ]
+  },
+  {
     "version": "Demo 1.04",
     "date": "2026/04/11",
     "items":
