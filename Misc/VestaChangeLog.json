@@ -1,5 +1,16 @@
 [
   {
+    "version": "Demo 1.06",
+    "date": "2026/04/14",
+    "items":
+    [
+      "Increased number of Senders per Settlement to 9, up from 6",
+      "Lowered the price of Senders to make them usable earlier",
+      "Fixed issue with Ruins sometimes generating right next to the Temple, and thus be unusable to build a monument on top",
+      "Production buildings don't stockpile past 15 units per type anymore"
+    ]
+  },
+  {
     "version": "Demo 1.05",
     "date": "2026/04/12",
     "items":
