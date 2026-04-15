@@ -1,5 +1,15 @@
 [
   {
+    "version": "Demo 1.07",
+    "date": "2026/04/15",
+    "items":
+    [
+      "Added food/material/gold icons",
+      "Gold needed for hamlet-to-village upgrade lowered to 30, from 40",
+      "Balanced woodcamp and forestlodg production"
+    ]
+  },
+  {
     "version": "Demo 1.06",
     "date": "2026/04/14",
     "items":
