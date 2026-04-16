@@ -1,5 +1,15 @@
 [
   {
+    "version": "Demo 1.08",
+    "date": "2026/04/16",
+    "items":
+    [
+      "Fixed missing text from tutorial last step that tells you the temple gets harder to fill up the closer you are to completing it",
+      "Added additional steps to tutorial last section for clarity.",
+      "Made the temple 20% easier to complete"
+    ]
+  },
+  {
     "version": "Demo 1.07",
     "date": "2026/04/15",
     "items":
