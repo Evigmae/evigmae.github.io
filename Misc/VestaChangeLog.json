@@ -1,5 +1,50 @@
 [
   {
+    "version": "Demo 2.00.0",
+    "date": "2026/06/14",
+    "items":
+    [
+      "You can now select an upgrade on Civilization level up",
+      "Monument now grants experience instead of an upgrade",
+      "Upgrades are now explained, and can be seen on the Overview panel",
+      "New arid biome that takes at least 30% of the world",
+      "Each tile now has a % of how wet-dry it is",
+      "Forestlodge produces slower on arid biomes",
+      "Farmhouse cannot be placed on tiles that are too dry",
+      "Added time of year and seasons",
+      "Game now tracks time of year instead of clock time",
+      "Weather is not tied to seasons",
+      "Farmhouse works faster during rain, and slower during snow",
+      "Settlements now deteriorate if they can't produce gold",
+      "You can now get a Game Over if you run out of settlements",
+      "New messages for important game events",
+      "Settlements now produce 1 gold per module instead of 2",
+      "But Gold production speed is also much 80% faster",
+      "Prices and experience are adjusted to account for gold generation",
+      "Settlement expansions can now only be placed within 2 tiles of the center",
+      "Switched to hardware cursor",
+      "Added arrow keys to control the camera",
+      "Added mouse wheel and home/end keys to control the camera zoom",
+      "The demo now ends in a cliffhanger before late-game",
+      "Lots of art tweaks and improvements",
+      "Improved sound for Sender instruction UI",
+      "When you order a new settlement the builder is now a whole group",
+      "Generation of valid placement grid is faster"
+    ]
+  },
+  {
+    "version": "Demo 1.09",
+    "date": "2026/04/28",
+    "items":
+    [
+      "Updated Upgrades System. Now earned at level up and from monuments",
+      "Farmhouses now have 3x3 tiles footprint (32 farms in the 8 spaces around the Farmhouse)",
+      "Farmhouse best production time when all 32 farms could be created around it",
+      "Top of hills is now floor colored so they aren't confused as mountains",
+      "Moved some UI panels to the right of the screen"
+    ]
+  },
+  {
     "version": "Demo 1.08",
     "date": "2026/04/16",
     "items":
