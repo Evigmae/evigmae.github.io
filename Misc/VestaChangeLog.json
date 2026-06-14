@@ -13,7 +13,7 @@
       "Farmhouse cannot be placed on tiles that are too dry",
       "Added time of year and seasons",
       "Game now tracks time of year instead of clock time",
-      "Weather is not tied to seasons",
+      "Weather is now tied to seasons",
       "Farmhouse works faster during rain, and slower during snow",
       "Settlements now deteriorate if they can't produce gold",
       "You can now get a Game Over if you run out of settlements",
