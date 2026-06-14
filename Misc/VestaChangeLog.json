@@ -22,6 +22,7 @@
       "But Gold production speed is also much 80% faster",
       "Prices and experience are adjusted to account for gold generation",
       "Settlement expansions can now only be placed within 2 tiles of the center",
+      "Settlements can be placed closer to each other and to mountains",
       "Switched to hardware cursor",
       "Added arrow keys to control the camera",
       "Added mouse wheel and home/end keys to control the camera zoom",
