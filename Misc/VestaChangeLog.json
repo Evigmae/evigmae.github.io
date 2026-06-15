@@ -1,5 +1,15 @@
 [
   {
+    "version": "Demo 2.00.1",
+    "date": "2026/06/15",
+    "items":
+    [
+      "Fixed various typos and localization issues",
+      "Tweaked balanced for a more consistent pace",
+      "Senders 20% slower in the snow"
+    ]
+  },
+  {
     "version": "Demo 2.00.0",
     "date": "2026/06/14",
     "items":
