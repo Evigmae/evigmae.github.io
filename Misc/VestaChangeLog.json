@@ -1,5 +1,15 @@
 [
   {
+    "version": "Demo 2.00.2",
+    "date": "2026/06/15",
+    "items":
+    [
+      "Viewing a message now correctly exits out of other actions first",
+      "The Deterioration notification now mentions lacking resources to generate gold",
+      "Fixed not using game custom icon"
+    ]
+  },
+  {
     "version": "Demo 2.00.1",
     "date": "2026/06/15",
     "items":
