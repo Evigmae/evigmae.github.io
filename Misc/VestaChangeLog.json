@@ -1,5 +1,13 @@
 [
   {
+    "version": "Demo 2.00.3",
+    "date": "2026/06/18",
+    "items":
+    [
+      "Fixed bottom screen edge panning being blocked by the UI"
+    ]
+  },
+  {
     "version": "Demo 2.00.2",
     "date": "2026/06/15",
     "items":
