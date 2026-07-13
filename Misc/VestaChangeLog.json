@@ -1,5 +1,16 @@
 [
   {
+    "version": "PLAYTEST 3.00.1",
+    "date": "2026/07/13",
+    "itmes":
+    [
+      "Fixed a few text typos, localization, and format errors",
+      "Adjusted resource generation rates a bit",
+      "Adjusted how much experience things give and how much is needed per level",
+      "The reach level 7 objective now shows progress"
+    ]
+  },
+  {
     "version": "PLAYTEST 3.00.0",
     "date": "2026/07/13",
     "items":
