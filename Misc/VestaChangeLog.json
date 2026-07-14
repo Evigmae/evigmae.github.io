@@ -1,5 +1,22 @@
 [
   {
+    "version": "PLAYTEST 3.00.2",
+    "date": "2026/07/134",
+    "items":
+    [
+      "Added 2 civ advancements to increase food and material stockpiles",
+      "Stonecamp 20% slower",
+      "Experience required per level 20% higher",
+      "Tier 1 upgrades price 20% cheaoer",
+      "Tier 2 upgrades price down to 20% cheaper",
+      "Fixed issue with exp value past level 19",
+      "Fixed issue with civ advancement about fishinghut showing up many times",
+      "Fixed text wrapping on Select Advancement panel",
+      "Fixed issue with Farms not always removing trees from lots",
+      "Fixed being able to place multiple upgrades on a building"
+    ]
+  },
+  {
     "version": "PLAYTEST 3.00.1",
     "date": "2026/07/13",
     "items":
