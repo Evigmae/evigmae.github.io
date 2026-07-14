@@ -1,7 +1,18 @@
 [
+    {
+    "version": "PLAYTEST 3.00.3",
+    "date": "2026/07/15",
+    "items":
+    [
+      "Some changes to tutorial text",
+      "Added the missing speed increase text on the Building Upgrade card",
+      "Fixed issue with Civ Advancement not storing you had picked one of them",
+      "Fixed issue with settlement name displayed on Victory screen if destroyed"
+    ]
+  },
   {
     "version": "PLAYTEST 3.00.2",
-    "date": "2026/07/134",
+    "date": "2026/07/14",
     "items":
     [
       "Added 2 civ advancements to increase food and material stockpiles",
