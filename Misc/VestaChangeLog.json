@@ -1,5 +1,19 @@
 [
-    {
+  {
+    "version": "PLAYTEST 3.01.0",
+    "date": "2026/07/18",
+    "items":
+    [
+      "NEW: Road Bandits!",
+      "NEW: Guardtowers now function!",
+      "NEW: Guards!",
+      "Refactored and reordered the Tutorial Entries",
+      "Added a few new tutorial entries",
+      "Fixed a few things not properly stopping with Active Pause",
+      "Fixed a few descriptions missing"
+    ]
+  },
+  {
     "version": "PLAYTEST 3.00.3",
     "date": "2026/07/15",
     "items":
