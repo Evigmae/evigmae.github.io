@@ -1,5 +1,20 @@
 [
   {
+    "version": "PLAYTEST 3.01.1",
+    "date": "2026/07/19",
+    "items":
+    [
+      "NEW: Entirely reworked the Temple Tribute system",
+      "Small notifications now last twice as long",
+      "Small notifications flashes when appearing",
+      "Added notification for Bandit Spotted near town",
+      "Added notification for Guard Dispatched",
+      "Made Settlement Cycle Circle a bit larger",
+      "Fixed issue with farms not clearing all trees if placed in forest",
+      "Fixed Guardtower helper not re-entering the tower after returning stolen goods"
+    ]
+  },
+  {
     "version": "PLAYTEST 3.01.0",
     "date": "2026/07/18",
     "items":
