@@ -1,5 +1,28 @@
 [
   {
+    "version": "PLAYTEST 3.02.0",
+    "date": "2026/07/22",
+    "items":
+    [
+      "NEW: Senders can now carry up to 45 of the same type. Their UI lets you freely set the type per slider",
+      "NEW: All Production cycles are now tied to game-time (days/weeks)",
+      "NEW: Farms can now be placed near rivers regardless of biome",
+      "NEW: You can now zoom out more",
+      "Settlement has a slower cycle but produces more at once",
+      "Settlements placed in dry biomes will tell you they need help with food on their popup",
+      "Things can no longer be placed near the edge of the map",
+      "Production building descriptions show how much they generate on average per week",
+      "Prices adjusted",
+      "Reserve resources hold-time should now feel better",
+      "Various UI adjustements",
+      "You can once again skip the tutorial",
+      "Bandits no longer spawn too close to their targets",
+      "Fixed being able to place Fishinghuts between hills and lake-shore",
+      "Fixed issue with upgraded guardtower not doing its job",
+      "Fixed guardtower helper getting stuck at the foot of the tower after returning stolen goods"
+    ]
+  },
+  {
     "version": "PLAYTEST 3.01.1",
     "date": "2026/07/19",
     "items":
