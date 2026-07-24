@@ -4,7 +4,8 @@
     "date": "2026/07/24",
     "items":
     [
-      "Opening the Steam Overlay pauses/upauses the game"
+      "Opening the Steam Overlay pauses/upauses the game",
+      "Both the Open Survey and Wishlist game buttons now open the browser inside the Steam Overlay instead of taking you out of the game"
     ]
   },
   {
