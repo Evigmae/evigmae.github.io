@@ -1,4 +1,29 @@
 [
+   {
+    "version": "PLAYTEST 3.03.0",
+    "date": "2026/07/24",
+    "items":
+    [
+      "NEW: You can pick keyboard layout on the game settings (QWERTY, QWERTZ, and AZERTY)",
+      "NEW: Deterministic World Generation. Worlds now have a Seed Number and can be replicated",
+      "NEW: Added more information to the Settlement Card in the Overview panel",
+      "NEW: The Temple now generates a message after each phase is completed",
+      "NEW: If you keep the temple reserve above 70% its cycle goes twice as fast!",
+      "Hotkeys back to ZXCV now that the Z is no longer an issue with other keyboard layouts",
+      "Temple re-balanced so it is less of a drag",
+      "Updated various 3d Assets",
+      "Added a few missing localized texts",
+      "Bandits now are told to leave the map and stop spawning after Victory",
+      "Fixed issue with Settlement Expansion incorrectly displaying information on the last level",
+      "Fixed issue with not being able to upgrade Stonecamps if there were no more mountain-slots available",
+      "Fixed Senders not actually updating their 'OnRoad' value. So now they do actually move faster on roads as intended",
+      "Fixed Roads disappearing while in ActivePause (they weren't pausing)",
+      "Fixed small trees spawning underneath big trees",
+      "Fixed Guardtower not working when upgraded",
+      "Fixed settlement not reverting its size value when losing an expansion to deterioration",
+      "Fixed lingering button border highlight on build menu"
+    ]
+  },
   {
     "version": "PLAYTEST 3.02.0",
     "date": "2026/07/22",
