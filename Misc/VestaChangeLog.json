@@ -1,5 +1,13 @@
 [
-   {
+  {
+    "version": "PLAYTEST 3.03.1",
+    "date": "2026/07/24",
+    "items":
+    [
+      "Opening the Steam Overlay pauses/upauses the game"
+    ]
+  },
+  {
     "version": "PLAYTEST 3.03.0",
     "date": "2026/07/24",
     "items":
